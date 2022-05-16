@@ -1,4 +1,12 @@
 .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
