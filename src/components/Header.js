@@ -1,35 +1,36 @@
 import React from "react";
 import "../css/Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
         <header className="header">
             <div className="header__container">
                 <div className="logo">
-                    <a href="#">Cake Shop</a>
+                    <a href="/">Cake Shop</a>
                 </div>
                 <ul className="nav">
                     <li className="nav__link">
-                        <a href="#">Торты</a>
+                        <a href="/">Торты</a>
                     </li>
                     <li className="nav__link">
-                        <a href="#">Пирожные</a>
+                        <a href="/">Пирожные</a>
                     </li>
                     <li className="nav__link">
-                        <a href="#">Мороженое</a>
+                        <a href="/">Мороженое</a>
                     </li>
                     <li className="nav__link">
-                        <a href="#">Напитки</a>
+                        <a href="/">Напитки</a>
                     </li>
                     <li className="nav__link">
-                        <a href="#">О нас</a>
+                        <Link to="/about">О нас</Link>
                     </li>
                     <li className="nav__link">
-                        <a href="#">Контакты</a>
+                        <Link to="/contacts">Контакты</Link>
                     </li>
                 </ul>
                 <div className="cart">
-                    <button>Корзина</button>
+                    <Link to="/cart">Корзина</Link>
                 </div>
             </div>
         </header>

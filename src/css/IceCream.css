@@ -1,0 +1,31 @@
+.ice-cream {
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgba(183, 210, 247, 0.54);
+}
+
+.ice-cream__container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.ice-cream__title {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1280px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=IceCream.css.map */
