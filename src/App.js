@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Promo from './components/Promo';
 import Popular from './components/Popular';
 import Cakes from './components/Cakes';
+import Pastry from './components/Pastry';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Popular />
 
       <Cakes />
+
+      <Pastry />
 
     </div>
   );

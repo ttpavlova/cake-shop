@@ -1,19 +1,19 @@
 import React from "react";
-import "../css/Cakes.css";
+import "../css/Pastry.css";
 import FilterButton from "./FilterButton";
 import ProductCard from "./ProductCard";
 
-function Cakes() {
+function Pastry() {
     return (
-        <section className="cakes">
-            <div className="cakes__container">
-                <h2 className="cakes__title">Торты</h2>
+        <section className="pastry">
+            <div className="pastry__container">
+                <h2 className="pastry__title">Пирожные</h2>
                 <div className="filters">
                     <FilterButton name="Все" />
                     <FilterButton name="Сметанные" />
-                    <FilterButton name="Шоколадные" />
-                    <FilterButton name="Фруктовые" />
-                    <FilterButton name="Ягодные" />
+                    <FilterButton name="Песочные" />
+                    <FilterButton name="Слоёные" />
+                    <FilterButton name="Заварные" />
                 </div>
                 <div className="cards">
                     <ProductCard />
@@ -26,4 +26,4 @@ function Cakes() {
     );
 }
 
-export default Cakes;
+export default Pastry;

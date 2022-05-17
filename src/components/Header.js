@@ -16,9 +16,6 @@ function Header() {
                         <a href="#">Пирожные</a>
                     </li>
                     <li className="nav__link">
-                        <a href="#">Закуски</a>
-                    </li>
-                    <li className="nav__link">
                         <a href="#">Мороженое</a>
                     </li>
                     <li className="nav__link">

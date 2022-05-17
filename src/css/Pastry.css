@@ -1,0 +1,31 @@
+.pastry {
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgba(239, 174, 240, 0.54);
+}
+
+.pastry__container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.pastry__title {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1280px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=Pastry.css.map */
