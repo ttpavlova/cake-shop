@@ -1,0 +1,26 @@
+.cakes {
+    width: 100%;
+    padding: 40px 0;
+    background-color: antiquewhite;
+}
+
+.cakes__container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.cakes__title {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+}

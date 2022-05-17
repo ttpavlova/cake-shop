@@ -24,6 +24,12 @@ function Header() {
                     <li className="nav__link">
                         <a href="#">Напитки</a>
                     </li>
+                    <li className="nav__link">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li className="nav__link">
+                        <a href="#">Контакты</a>
+                    </li>
                 </ul>
                 <div className="cart">
                     <button>Корзина</button>

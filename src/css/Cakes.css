@@ -1,12 +1,21 @@
-.popular {
+.cakes {
   width: 100%;
   padding: 40px 0;
+  background-color: antiquewhite;
 }
 
-.popular__title {
-  margin: 20px 0 40px;
+.cakes__container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.cakes__title {
+  margin: 20px 0;
   font-size: 24px;
-  text-align: center;
+}
+
+.filters {
+  margin-bottom: 20px;
 }
 
 .cards {
@@ -19,4 +28,4 @@
   width: 1280px;
   margin: 0 auto;
 }
-/*# sourceMappingURL=Popular.css.map */
+/*# sourceMappingURL=Cakes.css.map */
