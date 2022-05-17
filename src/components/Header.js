@@ -12,13 +12,13 @@ function Header() {
                 </div>
                 <ul className="nav">
                     <li className="nav__link">
-                        <HashLink smooth to="#cakes">Торты</HashLink>
+                        <HashLink smooth to="/#cakes">Торты</HashLink>
                     </li>
                     <li className="nav__link">
-                        <HashLink smooth to="#pastry">Пирожные</HashLink>
+                        <HashLink smooth to="/#pastry">Пирожные</HashLink>
                     </li>
                     <li className="nav__link">
-                        <HashLink smooth to="#ice-cream">Мороженое</HashLink>
+                        <HashLink smooth to="/#ice-cream">Мороженое</HashLink>
                     </li>
                     <li className="nav__link">
                         <a href="/">Напитки</a>
