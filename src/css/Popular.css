@@ -1,1 +1,22 @@
-/* No CSS *//*# sourceMappingURL=Popular.css.map */
+.popular {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.popular__title {
+  margin: 40px 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1280px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=Popular.css.map */
