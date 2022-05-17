@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Header.css";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 function Header() {
     return (
@@ -11,13 +12,13 @@ function Header() {
                 </div>
                 <ul className="nav">
                     <li className="nav__link">
-                        <a href="/">Торты</a>
+                        <HashLink smooth to="#cakes">Торты</HashLink>
                     </li>
                     <li className="nav__link">
-                        <a href="/">Пирожные</a>
+                        <HashLink smooth to="#pastry">Пирожные</HashLink>
                     </li>
                     <li className="nav__link">
-                        <a href="/">Мороженое</a>
+                        <HashLink smooth to="#ice-cream">Мороженое</HashLink>
                     </li>
                     <li className="nav__link">
                         <a href="/">Напитки</a>

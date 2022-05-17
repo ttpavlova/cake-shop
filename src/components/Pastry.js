@@ -5,7 +5,7 @@ import ProductCard from "./ProductCard";
 
 function Pastry() {
     return (
-        <section className="pastry">
+        <section className="pastry" id="pastry">
             <div className="pastry__container">
                 <h2 className="pastry__title">Пирожные</h2>
                 <div className="filters">
