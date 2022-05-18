@@ -1,5 +1,6 @@
 .header {
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 10;
@@ -15,7 +16,7 @@
           justify-content: space-between;
   width: 1280px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 
 .nav__link {
@@ -25,5 +26,21 @@
 
 * > a {
   text-decoration: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  .nav {
+    display: none;
+  }
+  .cart {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

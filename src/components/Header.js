@@ -33,6 +33,9 @@ function Header() {
                 <div className="cart">
                     <Link to="/cart">Корзина</Link>
                 </div>
+                <span className="burger-menu material-symbols-outlined">
+                    menu
+                </span>
             </div>
         </header>
     );
