@@ -9,7 +9,8 @@
 .header__container {
     display: flex;
     justify-content: space-between;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 20px 10px;
 }
@@ -27,7 +28,7 @@
     display: none;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 992px) {
     .nav {
         display: none;
     }
