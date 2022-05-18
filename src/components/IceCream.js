@@ -12,6 +12,7 @@ function IceCream() {
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />
+                    <ProductCard />
                 </div>
             </div>
         </section>

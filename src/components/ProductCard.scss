@@ -1,8 +1,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin: 10px;
+    min-width: 300px;
     padding: 30px;
     border: 1px solid rgb(249, 182, 197);
     border-radius: 10px;

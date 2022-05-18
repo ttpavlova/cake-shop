@@ -20,6 +20,7 @@ function Cakes() {
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />
+                    <ProductCard />
                 </div>
             </div>
         </section>
