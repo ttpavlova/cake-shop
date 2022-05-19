@@ -46,6 +46,10 @@
     }
 
     .cart {
+        display: inline-block;
+    }
+
+    .cart.hidden {
         display: none;
     }
 
