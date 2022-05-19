@@ -24,7 +24,11 @@
     text-decoration: none;
 }
 
-.burger-menu {
+.burger-menu-btn {
+    display: none;
+}
+
+.close-menu-btn {
     display: none;
 }
 
@@ -33,11 +37,31 @@
         display: none;
     }
 
+    .nav.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: beige;
+    }
+
     .cart {
         display: none;
     }
 
-    .burger-menu {
+    .burger-menu-btn {
         display: block;
+    }
+
+    .burger-menu-btn.hidden {
+        display: none;
+    }
+
+    .close-menu-btn {
+        display: block;
+    }
+
+    .close-menu-btn.hidden {
+        display: none;
     }
 }

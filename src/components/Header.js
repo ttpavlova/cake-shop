@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Header.css";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 function Header() {
+    const [isMenuOpened, setMenuOpened] = useState(false);
+
     return (
         <header className="header">
             <div className="header__container">
                 <div className="logo">
                     <a href="/">Cake Shop</a>
                 </div>
-                <ul className="nav">
+                <ul className={isMenuOpened ? "nav active" : "nav"}>
                     <li className="nav__link">
                         <HashLink smooth to="/#cakes">Торты</HashLink>
                     </li>
@@ -33,9 +35,16 @@ function Header() {
                 <div className="cart">
                     <Link to="/cart">Корзина</Link>
                 </div>
-                <span className="burger-menu material-symbols-outlined">
-                    menu
-                </span>
+                <button type="button" className={isMenuOpened ? "burger-menu-btn hidden" : "burger-menu-btn"} onClick={() => {setMenuOpened(true)}}>
+                    <span className="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+                <button type="button" className={isMenuOpened ? "close-menu-btn" : "close-menu-btn hidden"} onClick={() => {setMenuOpened(false)}}>
+                    <span className="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
             </div>
         </header>
     );
