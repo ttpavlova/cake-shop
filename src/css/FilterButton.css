@@ -1,8 +1,9 @@
 .filter__button {
   margin-right: 10px;
-  padding: 5px 10px;
-  border: 1px solid #ec7554;
-  border-radius: 10px;
+  padding: 5px 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid pink;
+  border-radius: 20px;
   cursor: pointer;
 }
 /*# sourceMappingURL=FilterButton.css.map */
