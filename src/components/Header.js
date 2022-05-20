@@ -7,12 +7,12 @@ function Header() {
     const [isMenuOpened, setMenuOpened] = useState(false);
 
     return (
-        <header className={isMenuOpened ? "header mobile" : "header"}>
-            <div className={isMenuOpened ? "header__container mobile" : "header__container"}>
-                <div className="logo">
+        <header className={"header" + (isMenuOpened ? " mobile" : "")}>
+            <div className={"header__container" + (isMenuOpened ? " mobile" : "")}>
+                <div className={"logo" + (isMenuOpened ? " mobile" : "")}>
                     <a href="/">Cake Shop</a>
                 </div>
-                <ul className={isMenuOpened ? "nav active" : "nav"}>
+                <ul className={"nav" + (isMenuOpened ? " active" : "")}>
                     <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
                         <HashLink smooth to="/#cakes">Торты</HashLink>
                     </li>
@@ -32,15 +32,15 @@ function Header() {
                         <Link to="/contacts">Контакты</Link>
                     </li>
                 </ul>
-                <div className={isMenuOpened ? "cart" : "cart hidden"}>
+                <div className={"cart" + (isMenuOpened ? "" : " hidden")}>
                     <Link to="/cart">Корзина</Link>
                 </div>
-                <button type="button" className={isMenuOpened ? "burger-menu-btn hidden" : "burger-menu-btn"} onClick={() => {setMenuOpened(true)}}>
+                <button type="button" className={"burger-menu-btn" + (isMenuOpened ? " hidden" : "")} onClick={() => {setMenuOpened(true)}}>
                     <span className="material-symbols-outlined">
                         menu
                     </span>
                 </button>
-                <button type="button" className={isMenuOpened ? "close-menu-btn" : "close-menu-btn hidden"} onClick={() => {setMenuOpened(false)}}>
+                <button type="button" className={"close-menu-btn" + (isMenuOpened ? "" : " hidden")} onClick={() => {setMenuOpened(false)}}>
                     <span className="material-symbols-outlined">
                         close
                     </span>
