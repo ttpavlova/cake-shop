@@ -7,8 +7,8 @@ function Header() {
     const [isMenuOpened, setMenuOpened] = useState(false);
 
     return (
-        <header className="header">
-            <div className="header__container">
+        <header className={isMenuOpened ? "header mobile" : "header"}>
+            <div className={isMenuOpened ? "header__container mobile" : "header__container"}>
                 <div className="logo">
                     <a href="/">Cake Shop</a>
                 </div>
