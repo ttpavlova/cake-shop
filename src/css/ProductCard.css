@@ -8,8 +8,10 @@
           flex-direction: column;
   min-width: 300px;
   padding: 30px;
-  border: 1px solid #f9b6c5;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.1);
 }
 
 .card__img-wrapper {
@@ -44,5 +46,16 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__submit {
+  padding: 10px 20px;
+  background-color: pink;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
 }
 /*# sourceMappingURL=ProductCard.css.map */
