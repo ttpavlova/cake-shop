@@ -14,7 +14,7 @@ const FILTER_MAP = {
     Все: () => true,
     Сметанные: cake => cake.type === "sour-cream",
     Шоколадные: cake => cake.type === "chocolate",
-    Фруктовые: cake => cake.type == "fruit",
+    Фруктовые: cake => cake.type === "fruit",
     Ягодные: cake => cake.type === "berry"
 };
 
