@@ -3,14 +3,20 @@ import "../css/Popular.css";
 import ProductCard from "./ProductCard";
 
 function Popular(props) {
-    const popularList = props.cakes.filter(cake => cake.id === 3).map(cake => (
+    const cakeList = props.cakes.filter(cake => cake.id === 2 || cake.id === 3);
+    
+    const pastryList = props.pastry.filter(pastry => pastry.id === 2 || pastry.id === 3);
+
+    const allItemsList = cakeList.concat(pastryList);
+
+    const popularList = allItemsList.map(item => (
         <ProductCard
-            id={cake.id}
-            name={cake.name}
-            description={cake.description}
-            price={cake.price}
-            type={cake.type}
-            key={cake.id}
+            id={item.id}
+            name={item.name}
+            description={item.description}
+            price={item.price}
+            type={item.type}
+            key={item.id}
         />
     ));
 

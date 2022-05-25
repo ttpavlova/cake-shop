@@ -13,6 +13,13 @@ const CAKES_DATA = [
   {id: 4, name: "Ягодный торт", description: "описание ягодного торта", price: 270, type: "berry"}
 ]
 
+const PASTRY_DATA = [
+  {id: 1, name: "Бисквитное пирожное", description: "описание бисквитного пирожного", price: 100, type: "biscuit"},
+  {id: 2, name: "Песочное пирожное", description: "описание песочного пирожного", price: 120, type: "shortbread"},
+  {id: 3, name: "Слоёное пирожное", description: "описание слоёного пирожного", price: 150, type: "flaky"},
+  {id: 4, name: "Заварное пирожное", description: "описание заварного пирожного", price: 80, type: "custard"}
+]
+
 function App() {
   return (
     <div className="app-wrapper">
@@ -21,11 +28,11 @@ function App() {
 
       <Promo />
 
-      <Popular cakes={CAKES_DATA} />
+      <Popular cakes={CAKES_DATA} pastry={PASTRY_DATA} />
 
       <Cakes cakes={CAKES_DATA} />
 
-      <Pastry />
+      <Pastry pastry={PASTRY_DATA} />
 
       <IceCream />
 
