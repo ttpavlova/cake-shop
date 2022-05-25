@@ -3,13 +3,6 @@ import "../css/Cakes.css";
 import FilterButton from "./FilterButton";
 import ProductCard from "./ProductCard";
 
-const DATA = [
-    {id: 1, name: "Сметанный торт", description: "описание сметанного торта", price: 200, type: "sour-cream"},
-    {id: 2, name: "Шоколадный торт", description: "описание шоколадного торта", price: 300, type: "chocolate"},
-    {id: 3, name: "Фруктовый торт", description: "описание фруктового торта", price: 250, type: "fruit"},
-    {id: 4, name: "Ягодный торт", description: "описание ягодного торта", price: 270, type: "berry"}
-]
-
 const FILTER_MAP = {
     Все: () => true,
     Сметанные: cake => cake.type === "sour-cream",
@@ -20,7 +13,7 @@ const FILTER_MAP = {
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
-function Cakes() {
+function Cakes(props) {
     const [filter, setFilter] = useState("Все");
 
     const filterList = FILTER_NAMES.map(name => (
@@ -32,7 +25,7 @@ function Cakes() {
         />
     ));
 
-    const cakeList = DATA.filter(FILTER_MAP[filter]).map(cake => (
+    const cakeList = props.cakes.filter(FILTER_MAP[filter]).map(cake => (
         <ProductCard
             id={cake.id}
             name={cake.name}
