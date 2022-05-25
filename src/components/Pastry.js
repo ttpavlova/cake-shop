@@ -10,7 +10,7 @@ function Pastry() {
                 <h2 className="pastry__title">Пирожные</h2>
                 <div className="filters">
                     <FilterButton name="Все" />
-                    <FilterButton name="Сметанные" />
+                    <FilterButton name="Бисквитные" />
                     <FilterButton name="Песочные" />
                     <FilterButton name="Слоёные" />
                     <FilterButton name="Заварные" />

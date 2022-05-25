@@ -3,7 +3,14 @@ import"../css/FilterButton.css";
 
 function FilterButton(props) {
     return (
-        <button type="button" className="button filter__button">{props.name}</button>
+        <button
+            type="button"
+            className="button filter__button"
+            aria-pressed={props.isPressed}
+            onClick={() => props.setFilter(props.name)}
+        >
+            {props.name}
+        </button>
     );
 }
 
