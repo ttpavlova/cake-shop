@@ -33,7 +33,6 @@ function Cart() {
                     </div>
                 </div>
             </section>
-
         </div>
     );
 }

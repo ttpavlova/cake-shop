@@ -114,6 +114,13 @@
   padding: 15px;
 }
 
+.container.cart-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
 .counter__container {
   display: -webkit-box;
   display: -ms-flexbox;

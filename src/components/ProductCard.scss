@@ -90,6 +90,13 @@
     }
 }
 
+.container {
+    &.cart-view {
+        display: flex;
+        width: 100%;
+    }
+}
+
 .counter {
     &__container {
         display: flex;

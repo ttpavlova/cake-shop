@@ -10,7 +10,7 @@ function ProductCard(props) {
     }
 
     const mainTemplate = (
-        <div className="card">
+        <div className="container">
             <div className="card__img-wrapper">
                 <div className="card__img"></div>
             </div>
@@ -24,7 +24,7 @@ function ProductCard(props) {
     );
 
     const cartTemplate = (
-        <div className="card cart-view">
+        <div className="container cart-view">
             <div className="card__img-wrapper cart-view">
                 <div className="card__img"></div>
             </div>
@@ -47,7 +47,9 @@ function ProductCard(props) {
     );
 
     return (
-        <div>{isCartView() ? cartTemplate : mainTemplate}</div>
+        <div className={"card" + (isCartView() ? " cart-view" : "")}>
+            {isCartView() ? cartTemplate : mainTemplate}
+        </div>
     );
 }
 
