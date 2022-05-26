@@ -3,9 +3,9 @@ import "../css/Popular.css";
 import ProductCard from "./ProductCard";
 
 function Popular(props) {
-    const cakeList = props.cakes.filter(cake => cake.id === 2 || cake.id === 3);
+    const cakeList = props.cakes.filter(cake => cake.id === "cake2" || cake.id === "cake3");
     
-    const pastryList = props.pastry.filter(pastry => pastry.id === 2 || pastry.id === 3);
+    const pastryList = props.pastry.filter(pastry => pastry.id === "pastry2" || pastry.id === "pastry3");
 
     const allItemsList = cakeList.concat(pastryList);
 
@@ -17,6 +17,7 @@ function Popular(props) {
             price={item.price}
             type={item.type}
             key={item.id}
+            className={"view"}
         />
     ));
 
