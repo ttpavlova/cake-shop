@@ -16,6 +16,9 @@ const FILTER_NAMES = Object.keys(FILTER_MAP);
 function Cakes(props) {
     const [filter, setFilter] = useState("Все");
 
+    const cartItemsCount = props.cartItemsCount;
+    const setCartItemsCount = props.setCartItemsCount;
+
     const filterList = FILTER_NAMES.map(name => (
         <FilterButton
             key={name}
@@ -32,6 +35,9 @@ function Cakes(props) {
             description={cake.description}
             price={cake.price}
             type={cake.type}
+            isInCart={cake.isInCart}
+            cartItemsCount={cartItemsCount}
+            setCartItemsCount={setCartItemsCount}
             key={cake.id}
         />
     ));

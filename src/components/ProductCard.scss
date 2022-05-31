@@ -29,6 +29,17 @@
         background-size: cover;
     }
 
+    &__text {
+        min-height: 85px;
+        margin: 0;
+
+        &.cart-view {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 20px;
+        }
+    }
+
     &__title {
         margin-bottom: 5px;
         font-size: 18px;
@@ -48,6 +59,7 @@
         &.cart-view {
             margin-left: auto;
             margin-right: 0;
+            width: 60px;
         }
     }
 
@@ -76,12 +88,6 @@
         padding: 20px;
     }
 
-    &__text {
-        display: flex;
-        flex-direction: column;
-        margin: 20px 20px;
-    }
-
     &__counter {
         display: flex;
         align-items: center;
@@ -100,6 +106,8 @@
 .counter {
     &__container {
         display: flex;
+        justify-content: space-between;
+        width: 100px;
         border: 1px solid rgba(0, 0, 0, 0.5);
         border-radius: 8px;
     }
@@ -107,6 +115,7 @@
     &__minus, &__plus {
         padding: 10px;
         cursor: pointer;
+        user-select: none;
     }
 
     &__number {

@@ -3,8 +3,10 @@ import "../css/Header.css";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
-function Header() {
+function Header(props) {
     const [isMenuOpened, setMenuOpened] = useState(false);
+
+    const cartItemsCount = props.cartItemsCount;
 
     return (
         <header className={"header" + (isMenuOpened ? " mobile" : "")}>
@@ -33,7 +35,10 @@ function Header() {
                     </li>
                 </ul>
                 <div className={"cart" + (isMenuOpened ? "" : " hidden")}>
-                    <Link to="/cart">Корзина</Link>
+                    <Link to="/cart">
+                        <span>{cartItemsCount + " "}</span>
+                        Корзина
+                    </Link>
                 </div>
                 <button type="button" className={"burger-menu-btn" + (isMenuOpened ? " hidden" : "")} onClick={() => {setMenuOpened(true)}}>
                     <span className="material-symbols-outlined">

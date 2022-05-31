@@ -1,13 +1,23 @@
 import React from "react";
 import "../css/Cart.css";
-import Header from "./Header";
 import ProductCard from "./ProductCard";
 
-function Cart() {
+function Cart(props) {
+    const cakeList = props.cakes.filter(cake => cake.isInCart).map(cake => (
+        <ProductCard
+            id={cake.id}
+            name={cake.name}
+            description={cake.description}
+            price={cake.price}
+            type={cake.type}
+            isInCart={cake.isInCart}
+            key={cake.id}
+            className="cart-view"
+        />
+    ));
+
     return (
         <div className="app-wrapper">
-
-            <Header />
 
             <section className="cart-section">
                 <div className="cart-section__container">
@@ -17,15 +27,7 @@ function Cart() {
                             <p>Очистить всё</p>
                         </div>
                         <div className="cart-section__content">
-                            <ProductCard
-                                id="cake1"
-                                name="Сметанный торт"
-                                description="описание сметанного торта"
-                                price="200"
-                                type="sour-cream"
-                                key="cake1"
-                                className="cart-view"
-                            />
+                            {cakeList}
                         </div>
                     </div>
                     <div className="cart-section__right">

@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/ProductCard.css";
 
 function ProductCard(props) {
+
+    const cartItemsCount = props.cartItemsCount;
+    const setCartItemsCount = props.setCartItemsCount;
+
+    const [count, setCount] = useState(1);
 
     function isCartView() {
         if (props.className === "cart-view") {
@@ -9,16 +14,35 @@ function ProductCard(props) {
         }
     }
 
+    function decreaseCount() {
+        if (count > 1) {
+            setCount(count - 1);
+        }
+        else {
+            // ...
+        }
+    }
+
+    function increaseCount() {
+        setCount(count + 1);
+    }
+
+    function countPrice(price, numberOfItems) {
+        return price * numberOfItems;
+    }
+
     const mainTemplate = (
         <div className="container">
             <div className="card__img-wrapper">
                 <div className="card__img"></div>
             </div>
-            <div className="card__title">{props.name}</div>
-            <div className="card__description">{props.description}</div>
+            <div className="card__text">
+                <div className="card__title">{props.name}</div>
+                <div className="card__description">{props.description}</div>
+            </div>
             <div className="card__footer">
                 <div className="card__price">{props.price} Р</div>
-                <div className="button card__submit">В корзину</div>
+                <div className="button card__submit" onClick={() => setCartItemsCount(cartItemsCount + 1)}>В корзину</div>
             </div>
         </div>
     );
@@ -28,19 +52,19 @@ function ProductCard(props) {
             <div className="card__img-wrapper cart-view">
                 <div className="card__img"></div>
             </div>
-            <div className="card__text">
+            <div className="card__text cart-view">
                 <div className="card__title">{props.name}</div>
                 <div className="card__description">{props.description}</div>
             </div>
             <div className="card__counter">
                 <div className="counter__container">
-                    <div className="counter__minus">-</div>
-                    <div className="counter__number">0</div>
-                    <div className="counter__plus">+</div>
+                    <div className="counter__minus" onClick={decreaseCount}>-</div>
+                    <div className="counter__number">{count}</div>
+                    <div className="counter__plus" onClick={increaseCount}>+</div>
                 </div>
             </div>
             <div className="card__footer cart-view">
-                <div className="card__price">{props.price} Р</div>
+                <div className="card__price">{countPrice(props.price, count)} Р</div>
                 <div className="button card__submit cart-view">В корзину</div>
             </div>
         </div>

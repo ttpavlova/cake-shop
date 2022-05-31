@@ -1,16 +1,17 @@
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './css/style.css';
 import Header from './components/Header';
-import Promo from './components/Promo';
-import Popular from './components/Popular';
-import Cakes from './components/Cakes';
-import Pastry from './components/Pastry';
-import IceCream from './components/IceCream';
+import Home from './components/Home';
+import About from './components/About';
+import Contacts from './components/Contacts';
+import Cart from './components/Cart';
 
 const CAKES_DATA = [
-  {id: "cake1", name: "Сметанный торт", description: "описание сметанного торта", price: 200, type: "sour-cream"},
-  {id: "cake2", name: "Шоколадный торт", description: "описание шоколадного торта", price: 300, type: "chocolate"},
-  {id: "cake3", name: "Фруктовый торт", description: "описание фруктового торта", price: 250, type: "fruit"},
-  {id: "cake4", name: "Ягодный торт", description: "описание ягодного торта", price: 270, type: "berry"}
+  {id: "cake1", name: "Сметанный торт", description: "описание сметанного торта", price: 200, type: "sour-cream", isInCart: false},
+  {id: "cake2", name: "Шоколадный торт", description: "описание шоколадного торта", price: 300, type: "chocolate", isInCart: true},
+  {id: "cake3", name: "Фруктовый торт", description: "описание фруктового торта", price: 250, type: "fruit", isInCart: false},
+  {id: "cake4", name: "Ягодный торт", description: "описание ягодного торта", price: 270, type: "berry", isInCart: false}
 ]
 
 const PASTRY_DATA = [
@@ -21,22 +22,18 @@ const PASTRY_DATA = [
 ]
 
 function App() {
+  const [cartItemsCount, setCartItemsCount] = useState(0);
+
   return (
-    <div className="app-wrapper">
-
-      <Header />
-
-      <Promo />
-
-      <Popular cakes={CAKES_DATA} pastry={PASTRY_DATA} />
-
-      <Cakes cakes={CAKES_DATA} />
-
-      <Pastry pastry={PASTRY_DATA} />
-
-      <IceCream />
-
-    </div>
+    <BrowserRouter>
+      <Header cartItemsCount={cartItemsCount} />
+        <Routes>
+          <Route path="/" element={<Home cakes={CAKES_DATA} pastry={PASTRY_DATA} cartItemsCount={cartItemsCount} setCartItemsCount={setCartItemsCount} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/cart" element={<Cart cakes={CAKES_DATA} />} />
+        </Routes>
+    </BrowserRouter>
   );
 }
 
