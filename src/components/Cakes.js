@@ -22,9 +22,12 @@ function Cakes(props) {
     const setCartItemsCount = props.setCartItemsCount;
 
     function handleClick(newItem) {
-        setItems([...items, newItem]);
+        const isInArray = items.find(item => item.id === newItem.id);
+        if (!isInArray) {
+            setItems([...items, newItem]);
 
-        setCartItemsCount(cartItemsCount + 1);
+            setCartItemsCount(cartItemsCount + 1);
+        }
     }
 
     const filterList = FILTER_NAMES.map(name => (
