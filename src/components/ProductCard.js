@@ -3,8 +3,8 @@ import "../css/ProductCard.css";
 
 function ProductCard(props) {
 
-    const cartItemsCount = props.cartItemsCount;
-    const setCartItemsCount = props.setCartItemsCount;
+    // const cartItemsCount = props.cartItemsCount;
+    // const setCartItemsCount = props.setCartItemsCount;
 
     const [count, setCount] = useState(1);
 
@@ -42,7 +42,7 @@ function ProductCard(props) {
             </div>
             <div className="card__footer">
                 <div className="card__price">{props.price} Р</div>
-                <div className="button card__submit" onClick={() => setCartItemsCount(cartItemsCount + 1)}>В корзину</div>
+                <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
             </div>
         </div>
     );

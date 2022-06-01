@@ -23,15 +23,25 @@ const PASTRY_DATA = [
 
 function App() {
   const [cartItemsCount, setCartItemsCount] = useState(0);
+  const [items, setItems] = useState([]);
 
   return (
     <BrowserRouter>
       <Header cartItemsCount={cartItemsCount} />
         <Routes>
-          <Route path="/" element={<Home cakes={CAKES_DATA} pastry={PASTRY_DATA} cartItemsCount={cartItemsCount} setCartItemsCount={setCartItemsCount} />} />
+          <Route path="/" element={
+            <Home
+              cakes={CAKES_DATA}
+              pastry={PASTRY_DATA}
+              items={items}
+              setItems={setItems}
+              cartItemsCount={cartItemsCount}
+              setCartItemsCount={setCartItemsCount}
+            />
+          } />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/cart" element={<Cart cakes={CAKES_DATA} />} />
+          <Route path="/cart" element={<Cart cakes={CAKES_DATA} items={items} />} />
         </Routes>
     </BrowserRouter>
   );

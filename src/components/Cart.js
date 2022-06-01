@@ -3,7 +3,9 @@ import "../css/Cart.css";
 import ProductCard from "./ProductCard";
 
 function Cart(props) {
-    const cakeList = props.cakes.filter(cake => cake.isInCart).map(cake => (
+    const items = props.items;
+        
+    const cakeList = items.map(cake => (
         <ProductCard
             id={cake.id}
             name={cake.name}
