@@ -4,15 +4,38 @@ import ProductCard from "./ProductCard";
 
 function Cart(props) {
     const items = props.items;
+    const setItems = props.setItems;
+
+    function handleDecreaseQuantity(id) {
+        const updatedItems = items.map(item => {
+            if (id === item.id) {
+                return {...item, quantity: item.quantity - 1};
+            }
+            return item;
+        });
+        setItems(updatedItems);
+    }
+
+    function handleIncreaseQuantity(id) {
+        const updatedItems = items.map(item => {
+            if (id === item.id) {
+                return {...item, quantity: item.quantity + 1};
+            }
+            return item;
+        });
+        setItems(updatedItems);
+    }
         
-    const cakeList = items.map(cake => (
+    const cakeList = items.filter(item => item.quantity > 0).map(cake => (
         <ProductCard
             id={cake.id}
             name={cake.name}
             description={cake.description}
             price={cake.price}
             type={cake.type}
-            isInCart={cake.isInCart}
+            quantity={cake.quantity}
+            handleDecreaseQuantity={() => handleDecreaseQuantity(cake.id)}
+            handleIncreaseQuantity={() => handleIncreaseQuantity(cake.id)}
             key={cake.id}
             className="cart-view"
         />

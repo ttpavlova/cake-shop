@@ -8,10 +8,10 @@ import Contacts from './components/Contacts';
 import Cart from './components/Cart';
 
 const CAKES_DATA = [
-  {id: "cake1", name: "Сметанный торт", description: "описание сметанного торта", price: 200, type: "sour-cream", isInCart: false},
-  {id: "cake2", name: "Шоколадный торт", description: "описание шоколадного торта", price: 300, type: "chocolate", isInCart: true},
-  {id: "cake3", name: "Фруктовый торт", description: "описание фруктового торта", price: 250, type: "fruit", isInCart: false},
-  {id: "cake4", name: "Ягодный торт", description: "описание ягодного торта", price: 270, type: "berry", isInCart: false}
+  {id: "cake1", name: "Сметанный торт", description: "описание сметанного торта", price: 200, type: "sour-cream", quantity: 0},
+  {id: "cake2", name: "Шоколадный торт", description: "описание шоколадного торта", price: 300, type: "chocolate", quantity: 0},
+  {id: "cake3", name: "Фруктовый торт", description: "описание фруктового торта", price: 250, type: "fruit", quantity: 0},
+  {id: "cake4", name: "Ягодный торт", description: "описание ягодного торта", price: 270, type: "berry", quantity: 0}
 ]
 
 const PASTRY_DATA = [
@@ -23,7 +23,7 @@ const PASTRY_DATA = [
 
 function App() {
   const [cartItemsCount, setCartItemsCount] = useState(0);
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(CAKES_DATA);
 
   return (
     <BrowserRouter>
@@ -41,7 +41,13 @@ function App() {
           } />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/cart" element={<Cart cakes={CAKES_DATA} items={items} />} />
+          <Route path="/cart" element={
+            <Cart
+              cakes={CAKES_DATA}
+              items={items}
+              setItems={setItems}
+            />}
+          />
         </Routes>
     </BrowserRouter>
   );

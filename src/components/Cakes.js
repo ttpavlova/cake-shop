@@ -21,13 +21,14 @@ function Cakes(props) {
     const cartItemsCount = props.cartItemsCount;
     const setCartItemsCount = props.setCartItemsCount;
 
-    function handleClick(newItem) {
-        const isInArray = items.find(item => item.id === newItem.id);
-        if (!isInArray) {
-            setItems([...items, newItem]);
-
-            setCartItemsCount(cartItemsCount + 1);
-        }
+    function addToCart(id) {
+        const updatedItems = items.map(item => {
+            if (id === item.id) {
+                return {...item, quantity: item.quantity + 1};
+            }
+            return item;
+        });
+        setItems(updatedItems);
     }
 
     const filterList = FILTER_NAMES.map(name => (
@@ -46,8 +47,7 @@ function Cakes(props) {
             description={cake.description}
             price={cake.price}
             type={cake.type}
-            isInCart={cake.isInCart}
-            onClick={() => handleClick(cake)}
+            onClick={() => addToCart(cake.id)}
             cartItemsCount={cartItemsCount}
             setCartItemsCount={setCartItemsCount}
             key={cake.id}
