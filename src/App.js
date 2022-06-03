@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './css/style.css';
 import Header from './components/Header';
@@ -25,6 +25,29 @@ function App() {
   const [cartItemsCount, setCartItemsCount] = useState(0);
   const [items, setItems] = useState(CAKES_DATA);
 
+  function addToCart(id) {
+    const updatedItems = items.map(item => {
+        if (id === item.id) {
+            return {...item, quantity: item.quantity + 1};
+        }
+        return item;
+    });
+
+    setItems(updatedItems);
+}
+
+  useEffect(() => {
+    calculateTotal();
+  })
+
+  function calculateTotal() {
+    const cartItemsCount = items.reduce((previousValue, item) => {
+      return previousValue + item.quantity;
+    }, 0);
+
+    setCartItemsCount(cartItemsCount);
+  }
+
   return (
     <BrowserRouter>
       <Header cartItemsCount={cartItemsCount} />
@@ -34,9 +57,9 @@ function App() {
               cakes={CAKES_DATA}
               pastry={PASTRY_DATA}
               items={items}
+              onClick={(id) => addToCart(id)}
               setItems={setItems}
               cartItemsCount={cartItemsCount}
-              setCartItemsCount={setCartItemsCount}
             />
           } />
           <Route path="/about" element={<About />} />
@@ -46,6 +69,7 @@ function App() {
               cakes={CAKES_DATA}
               items={items}
               setItems={setItems}
+              cartItemsCount={cartItemsCount}
             />}
           />
         </Routes>

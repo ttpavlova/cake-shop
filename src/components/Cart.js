@@ -13,6 +13,7 @@ function Cart(props) {
             }
             return item;
         });
+
         setItems(updatedItems);
     }
 
@@ -23,6 +24,7 @@ function Cart(props) {
             }
             return item;
         });
+
         setItems(updatedItems);
     }
         

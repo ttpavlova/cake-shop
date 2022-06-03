@@ -2,8 +2,6 @@ import React from "react";
 import "../css/ProductCard.css";
 
 function ProductCard(props) {
-    // const cartItemsCount = props.cartItemsCount;
-    // const setCartItemsCount = props.setCartItemsCount;
 
     function isCartView() {
         if (props.className === "cart-view") {

@@ -10,10 +10,7 @@ function Home(props) {
     const CAKES_DATA = props.cakes;
     const PASTRY_DATA = props.pastry;
     const items = props.items;
-    const setItems = props.setItems;
-    const cartItemsCount = props.cartItemsCount;
-    const setCartItemsCount = props.setCartItemsCount;
-
+    
     return (
         <div className="app-wrapper">
 
@@ -24,9 +21,7 @@ function Home(props) {
             <Cakes
                 cakes={CAKES_DATA}
                 items={items}
-                setItems={setItems}
-                cartItemsCount={cartItemsCount}
-                setCartItemsCount={setCartItemsCount}
+                onClick={(id) => props.onClick(id)}
             />
 
             <Pastry pastry={PASTRY_DATA} />

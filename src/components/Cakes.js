@@ -16,21 +16,6 @@ const FILTER_NAMES = Object.keys(FILTER_MAP);
 function Cakes(props) {
     const [filter, setFilter] = useState("Все");
 
-    const items = props.items;
-    const setItems = props.setItems;
-    const cartItemsCount = props.cartItemsCount;
-    const setCartItemsCount = props.setCartItemsCount;
-
-    function addToCart(id) {
-        const updatedItems = items.map(item => {
-            if (id === item.id) {
-                return {...item, quantity: item.quantity + 1};
-            }
-            return item;
-        });
-        setItems(updatedItems);
-    }
-
     const filterList = FILTER_NAMES.map(name => (
         <FilterButton
             key={name}
@@ -47,9 +32,7 @@ function Cakes(props) {
             description={cake.description}
             price={cake.price}
             type={cake.type}
-            onClick={() => addToCart(cake.id)}
-            cartItemsCount={cartItemsCount}
-            setCartItemsCount={setCartItemsCount}
+            onClick={() => props.onClick(cake.id)}
             key={cake.id}
         />
     ));
