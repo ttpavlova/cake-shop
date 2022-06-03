@@ -22,8 +22,9 @@ const PASTRY_DATA = [
 ]
 
 function App() {
-  const [cartItemsCount, setCartItemsCount] = useState(0);
   const [items, setItems] = useState(CAKES_DATA);
+  const [cartItemsCount, setCartItemsCount] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   function addToCart(id) {
     const updatedItems = items.map(item => {
@@ -34,10 +35,11 @@ function App() {
     });
 
     setItems(updatedItems);
-}
+  }
 
   useEffect(() => {
     calculateTotal();
+    calculateTotalPrice();
   })
 
   function calculateTotal() {
@@ -46,6 +48,16 @@ function App() {
     }, 0);
 
     setCartItemsCount(cartItemsCount);
+  }
+
+  function calculateTotalPrice() {
+    let sum = 0;
+    for (let i = 0; i < items.length; i++) {
+      let price = items[i].price * items[i].quantity;
+      sum = sum + price;
+    }
+    
+    setTotalPrice(sum);
   }
 
   return (
@@ -70,6 +82,7 @@ function App() {
               items={items}
               setItems={setItems}
               cartItemsCount={cartItemsCount}
+              totalPrice={totalPrice}
             />}
           />
         </Routes>
