@@ -3,9 +3,8 @@
     flex-direction: column;
     min-width: 300px;
     padding: 30px;
-    // border: 1px solid rgb(249, 182, 197);
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.1);
 
     &__img-wrapper {
@@ -65,12 +64,14 @@
 
     &__price {
         font-size: 18px;
+        font-weight: 600;
     }
 
     &__submit {
         padding: 10px 20px;
         font-size: 18px;
-        background-color: pink;
+        color: #fff;
+        background-color: #AA1945;
         border-radius: 30px;
         box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
         cursor: pointer;
@@ -109,12 +110,13 @@
         display: flex;
         justify-content: space-between;
         width: 100px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(170, 25, 69, 0.7);
         border-radius: 8px;
     }
 
     &__minus, &__plus {
         padding: 10px;
+        color: rgba(170, 25, 69, 0.7);
         cursor: pointer;
         user-select: none;
     }
