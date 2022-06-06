@@ -33,6 +33,8 @@
 }
 
 * > a {
+  display: inline-block;
+  width: 100%;
   text-decoration: none;
 }
 
@@ -46,7 +48,9 @@
 
 @media screen and (max-width: 992px) {
   .header.mobile {
-    background-color: beige;
+    width: 100%;
+    height: 100vh;
+    background-color: #F9CCD3;
   }
   .header__container.mobile {
     -webkit-box-orient: vertical;
@@ -79,13 +83,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
-    height: 100vh;
   }
   .cart {
     display: inline-block;
-    position: absolute;
-    bottom: 50%;
   }
   .cart.hidden {
     display: none;

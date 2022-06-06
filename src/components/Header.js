@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/Header.css";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 function Header(props) {
-    const [isMenuOpened, setMenuOpened] = useState(false);
-
+    const isMenuOpened = props.isMenuOpened;
+    const setMenuOpened = props.setMenuOpened;
     const cartItemsCount = props.cartItemsCount;
 
     return (
@@ -27,14 +27,14 @@ function Header(props) {
                     <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
                         <a href="/">Напитки</a>
                     </li>
-                    <li className="nav__link">
+                    <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
                         <Link to="/about">О нас</Link>
                     </li>
-                    <li className="nav__link">
+                    <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
                         <Link to="/contacts">Контакты</Link>
                     </li>
                 </ul>
-                <div className={"cart" + (isMenuOpened ? "" : " hidden")}>
+                <div className={"cart" + (isMenuOpened ? "" : " hidden")} onClick={() => {setMenuOpened(false)}}>
                     <Link to="/cart">
                         <span>{cartItemsCount + " "}</span>
                         Корзина

@@ -22,6 +22,7 @@ const PASTRY_DATA = [
 ]
 
 function App() {
+  const [isMenuOpened, setMenuOpened] = useState(false);
   const [items, setItems] = useState(CAKES_DATA);
   const [cartItemsCount, setCartItemsCount] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -62,7 +63,11 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header cartItemsCount={cartItemsCount} />
+      <Header
+        cartItemsCount={cartItemsCount}
+        isMenuOpened={isMenuOpened}
+        setMenuOpened={setMenuOpened}
+      />
         <Routes>
           <Route path="/" element={
             <Home
