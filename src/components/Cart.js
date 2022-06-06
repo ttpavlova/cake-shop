@@ -84,7 +84,7 @@ function Cart(props) {
                     <div className="cart-section__left">
                         <div className="cart-section__header">
                             <h2 className="cart-section__title">Корзина</h2>
-                            <p>Очистить всё</p>
+                            <button className="cart-section__clear-btn">Очистить всё</button>
                         </div>
                         <div className="cart-section__content">
                             {cakeList}
