@@ -1,6 +1,6 @@
 import React from "react";
-import "../../css/Drinks.css";
-import ProductCard from "../ProductCard";
+import "../css/Drinks.css";
+import ProductCard from "./ProductCard";
 
 function Drinks(props) {
     const drinksList = props.drinks.map(item => (

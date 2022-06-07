@@ -3,11 +3,11 @@ import "../css/Contacts.css";
 
 function Contacts() {
     return (
-        <div className="app-wrapper">
+        <section className="contacts">
 
             <p>contacts page</p>
 
-        </div>
+        </section>
     );
 }
 

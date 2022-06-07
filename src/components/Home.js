@@ -5,7 +5,7 @@ import Popular from './Popular';
 import Cakes from './Cakes';
 import Pastry from './Pastry';
 import IceCream from './IceCream';
-import Drinks from './Drinks/Drinks';
+import Drinks from './Drinks';
 
 function Home(props) {
     const CAKES_DATA = props.cakes;

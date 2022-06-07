@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contacts from './components/Contacts';
 import Cart from './components/Cart';
+import Footer from './components/Footer';
 
 const CAKES_DATA = [
   {id: "cake1", name: "Сметанный торт", description: "описание сметанного торта", price: 200, type: "sour-cream", quantity: 0},
@@ -109,6 +110,7 @@ function App() {
             />}
           />
         </Routes>
+        <Footer />
     </BrowserRouter>
   );
 }
