@@ -23,7 +23,7 @@ function ProductCard(props) {
                 <div className="card__description">{props.description}</div>
             </div>
             <div className="card__footer">
-                <div className="card__price">{props.price} Р</div>
+                <div className="card__price">{props.price} ₽</div>
                 <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
             </div>
         </div>

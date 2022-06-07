@@ -15,15 +15,25 @@ const CAKES_DATA = [
 ]
 
 const PASTRY_DATA = [
-  {id: "pastry1", name: "Бисквитное пирожное", description: "описание бисквитного пирожного", price: 100, type: "biscuit"},
-  {id: "pastry2", name: "Песочное пирожное", description: "описание песочного пирожного", price: 120, type: "shortbread"},
-  {id: "pastry3", name: "Слоёное пирожное", description: "описание слоёного пирожного", price: 150, type: "flaky"},
-  {id: "pastry4", name: "Заварное пирожное", description: "описание заварного пирожного", price: 80, type: "custard"}
+  {id: "pastry1", name: "Бисквитное пирожное", description: "описание бисквитного пирожного", price: 100, type: "biscuit", quantity: 0},
+  {id: "pastry2", name: "Песочное пирожное", description: "описание песочного пирожного", price: 120, type: "shortbread", quantity: 0},
+  {id: "pastry3", name: "Слоёное пирожное", description: "описание слоёного пирожного", price: 150, type: "flaky", quantity: 0},
+  {id: "pastry4", name: "Заварное пирожное", description: "описание заварного пирожного", price: 80, type: "custard", quantity: 0}
 ]
+
+const ICECREAM_DATA = [
+  {id: "ice-cream1", name: "Пломбир классический", description: "описание ...", price: 50, type: "plombir", quantity: 0},
+  {id: "ice-cream2", name: "Пломбир клубничный", description: "описание ...", price: 50, type: "plombir", quantity: 0},
+  {id: "ice-cream3", name: "Пломбир шоколадный", description: "описание ...", price: 50, type: "plombir", quantity: 0},
+  {id: "ice-cream4", name: "Пломбир мятный", description: "описание ...", price: 50, type: "plombir", quantity: 0},
+  {id: "ice-cream5", name: "Пломбир черничный", description: "описание ...", price: 50, type: "plombir", quantity: 0},
+]
+
+const ALL_DATA = CAKES_DATA.concat(PASTRY_DATA, ICECREAM_DATA);
 
 function App() {
   const [isMenuOpened, setMenuOpened] = useState(false);
-  const [items, setItems] = useState(CAKES_DATA);
+  const [items, setItems] = useState(ALL_DATA);
   const [cartItemsCount, setCartItemsCount] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
 
@@ -73,6 +83,7 @@ function App() {
             <Home
               cakes={CAKES_DATA}
               pastry={PASTRY_DATA}
+              iceCream={ICECREAM_DATA}
               items={items}
               onClick={(id) => addToCart(id)}
               setItems={setItems}
@@ -83,7 +94,6 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/cart" element={
             <Cart
-              cakes={CAKES_DATA}
               items={items}
               setItems={setItems}
               cartItemsCount={cartItemsCount}

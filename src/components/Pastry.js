@@ -32,6 +32,7 @@ function Pastry(props) {
             description={pastry.description}
             price={pastry.price}
             type={pastry.type}
+            onClick={() => props.onClick(pastry.id)}
             key={pastry.id}
         />
     ));

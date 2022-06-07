@@ -61,17 +61,17 @@ function Cart(props) {
         setItems(updatedItems);
     }
         
-    const cakeList = items.filter(item => item.quantity > 0).map(cake => (
+    const itemList = items.filter(item => item.quantity > 0).map(item => (
         <ProductCard
-            id={cake.id}
-            name={cake.name}
-            description={cake.description}
-            price={cake.price}
-            type={cake.type}
-            quantity={cake.quantity}
-            handleDecreaseQuantity={() => handleDecreaseQuantity(cake.id)}
-            handleIncreaseQuantity={() => handleIncreaseQuantity(cake.id)}
-            key={cake.id}
+            id={item.id}
+            name={item.name}
+            description={item.description}
+            price={item.price}
+            type={item.type}
+            quantity={item.quantity}
+            handleDecreaseQuantity={() => handleDecreaseQuantity(item.id)}
+            handleIncreaseQuantity={() => handleIncreaseQuantity(item.id)}
+            key={item.id}
             className="cart-view"
         />
     ));
@@ -87,7 +87,7 @@ function Cart(props) {
                             <button className="cart-section__clear-btn">Очистить всё</button>
                         </div>
                         <div className="cart-section__content">
-                            {cakeList}
+                            {itemList}
                         </div>
                     </div>
                     <div className="cart-section__right">

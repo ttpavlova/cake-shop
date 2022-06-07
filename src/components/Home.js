@@ -9,6 +9,7 @@ import IceCream from './IceCream';
 function Home(props) {
     const CAKES_DATA = props.cakes;
     const PASTRY_DATA = props.pastry;
+    const ICECREAM_DATA = props.iceCream;
     const items = props.items;
     
     return (
@@ -24,9 +25,17 @@ function Home(props) {
                 onClick={(id) => props.onClick(id)}
             />
 
-            <Pastry pastry={PASTRY_DATA} />
+            <Pastry
+                pastry={PASTRY_DATA}
+                items={items}
+                onClick={(id) => props.onClick(id)}
+            />
 
-            <IceCream />
+            <IceCream
+                iceCream={ICECREAM_DATA}
+                items={items}
+                onClick={(id) => props.onClick(id)}
+            />
 
         </div>
     );
