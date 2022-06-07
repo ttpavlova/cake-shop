@@ -25,7 +25,7 @@ function Header(props) {
                         <HashLink smooth to="/#ice-cream">Мороженое</HashLink>
                     </li>
                     <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
-                        <a href="/">Напитки</a>
+                        <HashLink smooth to="/#drinks">Напитки</HashLink>
                     </li>
                     <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
                         <Link to="/about">О нас</Link>

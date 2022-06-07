@@ -5,11 +5,13 @@ import Popular from './Popular';
 import Cakes from './Cakes';
 import Pastry from './Pastry';
 import IceCream from './IceCream';
+import Drinks from './Drinks/Drinks';
 
 function Home(props) {
     const CAKES_DATA = props.cakes;
     const PASTRY_DATA = props.pastry;
     const ICECREAM_DATA = props.iceCream;
+    const DRINKS_DATA = props.drinks;
     const items = props.items;
     
     return (
@@ -33,6 +35,12 @@ function Home(props) {
 
             <IceCream
                 iceCream={ICECREAM_DATA}
+                items={items}
+                onClick={(id) => props.onClick(id)}
+            />
+
+            <Drinks
+                drinks={DRINKS_DATA}
                 items={items}
                 onClick={(id) => props.onClick(id)}
             />

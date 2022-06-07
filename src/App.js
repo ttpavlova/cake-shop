@@ -29,7 +29,14 @@ const ICECREAM_DATA = [
   {id: "ice-cream5", name: "Пломбир черничный", description: "описание ...", price: 50, type: "plombir", quantity: 0},
 ]
 
-const ALL_DATA = CAKES_DATA.concat(PASTRY_DATA, ICECREAM_DATA);
+const DRINKS_DATA = [
+  {id: "drink1", name: "Сок вишнёвый", description: "...", price: 30, type: "", quantity: 0},
+  {id: "drink2", name: "Чай зелёный", description: "...", price: 60, type: "", quantity: 0},
+  {id: "drink3", name: "Чай чёрный", description: "...", price: 70, type: "", quantity: 0},
+  {id: "drink4", name: "Кофе Американо", description: "...", price: 80, type: "", quantity: 0},
+]
+
+const ALL_DATA = CAKES_DATA.concat(PASTRY_DATA, ICECREAM_DATA, DRINKS_DATA);
 
 function App() {
   const [isMenuOpened, setMenuOpened] = useState(false);
@@ -84,6 +91,7 @@ function App() {
               cakes={CAKES_DATA}
               pastry={PASTRY_DATA}
               iceCream={ICECREAM_DATA}
+              drinks={DRINKS_DATA}
               items={items}
               onClick={(id) => addToCart(id)}
               setItems={setItems}
