@@ -138,6 +138,11 @@
 
 @media screen and (max-width: 992px) {
     .card {
+        &.cart-view {
+            border-left: none;
+            border-right: none;
+        }
+
         &.cart-view:last-child {
             border-radius: 0;
         }

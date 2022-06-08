@@ -28,8 +28,7 @@ $footer: 70px;
         grid-area: sd;
         position: sticky;
         top: 90px;
-        border-radius: 10px;
-        background-color: rgba(249, 204, 211, 0.5);
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
     &__header {
@@ -67,6 +66,8 @@ $footer: 70px;
 
     &__total {
         padding: 20px;
+        border: 1px solid #F9CCD3;
+        border-radius: 0 0 10px 10px;
     }
 
     &__checkout-btn {
@@ -110,7 +111,7 @@ $footer: 70px;
         padding: 0;
 
         &__container {
-            grid-template-columns: 1fr;
+            grid-template-columns: minmax(320px, 1fr);
             grid-template-areas:
                 "main"
                 "sd";
@@ -128,6 +129,12 @@ $footer: 70px;
         }
 
         &__header {
+            border-radius: 0;
+        }
+
+        &__total {
+            border-left: none;
+            border-right: none;
             border-radius: 0;
         }
     }
