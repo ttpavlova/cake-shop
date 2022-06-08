@@ -35,9 +35,9 @@ function Header(props) {
                     </li>
                 </ul>
                 <div className={"cart" + (isMenuOpened ? "" : " hidden")} onClick={() => {setMenuOpened(false)}}>
-                    <Link to="/cart">
-                        <span>{cartItemsCount + " "}</span>
-                        Корзина
+                    <Link className="cart__text-part" to="/cart">
+                        <span className="cart__count">{cartItemsCount + " "}</span>
+                        <span className="cart__text">Корзина</span>
                     </Link>
                 </div>
                 <button type="button" className={"burger-menu-btn" + (isMenuOpened ? " hidden" : "")} onClick={() => {setMenuOpened(true)}}>
