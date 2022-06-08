@@ -69,7 +69,7 @@ $footer: 70px;
         padding: 20px;
     }
 
-    &__pay-btn {
+    &__checkout-btn {
         display: flex;
         align-items: center;
         margin: 0 auto;
@@ -82,17 +82,22 @@ $footer: 70px;
         cursor: pointer;
     }
 
-    &__pay-btn:hover {
+    &__checkout-btn:hover {
         background-color: #9f1c43;
     }
 
-    &__pay-btn:hover .arrow-icon {
+    &__checkout-btn:hover .arrow-icon {
         margin-left: 10px;
+    }
+
+    &__checkout-btn.hidden {
+        display: none;
     }
 }
 
 .total__text {
     min-width: 200px;
+    margin-bottom: 20px;
 }
 
 .arrow-icon {
@@ -108,9 +113,8 @@ $footer: 70px;
             grid-template-columns: 1fr;
             grid-template-areas:
                 "main"
-                "main"
-                "main"
                 "sd";
+            grid-gap: 0;
         }
 
         &__left {

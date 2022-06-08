@@ -97,7 +97,7 @@ function Cart(props) {
                         <div className="cart-section__total">
                             {priceText}
 
-                            <button className="cart-section__pay-btn">
+                            <button className={"cart-section__checkout-btn" + (isCartEmpty() ? " hidden" : "")}>
                             К оформлению заказа
                             <span className="material-symbols-outlined arrow-icon">
                                 navigate_next

@@ -169,6 +169,12 @@
   padding: 10px;
 }
 
+@media screen and (max-width: 992px) {
+  .card.cart-view:last-child {
+    border-radius: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card__footer {
     -webkit-box-orient: horizontal;
