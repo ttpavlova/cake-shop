@@ -49,7 +49,7 @@ function ProductCard(props) {
                         <div className="counter__plus" onClick={props.handleIncreaseQuantity}>+</div>
                     </div>
                 </div>
-                <div className="card__price">{countPrice(props.price, props.quantity)} Р</div>
+                <div className="card__price">{countPrice(props.price, props.quantity)} ₽</div>
                 <div className="button card__submit cart-view">В корзину</div>
             </div>
         </div>

@@ -26,7 +26,7 @@ function Cart(props) {
             default:
                 word = "товаров";
         }
-        return <p>Цена за {cartItemsCount} {word}: {totalPrice}</p>
+        return <p>Цена за {cartItemsCount} {word}: {totalPrice} ₽</p>
     }
 
     function isCartEmpty() {

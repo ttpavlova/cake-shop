@@ -113,7 +113,8 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 20px;
-  border-bottom: 1px solid #F9CCD3;
+  border: 1px solid #F9CCD3;
+  border-top: none;
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -121,7 +122,6 @@
 
 .card.cart-view:last-child {
   border-radius: 0 0 10px 10px;
-  border-bottom: none;
 }
 
 .card__counter {
