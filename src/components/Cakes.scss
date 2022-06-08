@@ -16,7 +16,10 @@
 }
 
 .filters {
-    margin-bottom: 20px;
+    display: flex;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+    overflow: auto;
 }
 
 .cards {

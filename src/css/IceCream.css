@@ -15,10 +15,6 @@
   font-size: 24px;
 }
 
-.filters {
-  margin-bottom: 20px;
-}
-
 .cards {
   display: -ms-grid;
   display: grid;
