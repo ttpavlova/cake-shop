@@ -60,6 +60,14 @@ function Cart(props) {
 
         setItems(updatedItems);
     }
+
+    function clearCart() {
+        const updatedItems = items.map(item => {
+            return {...item, quantity: 0};
+        });
+
+        setItems(updatedItems);
+    }
         
     const itemList = items.filter(item => item.quantity > 0).map(item => (
         <ProductCard
@@ -84,7 +92,7 @@ function Cart(props) {
                     <div className="cart-section__left">
                         <div className="cart-section__header">
                             <h2 className="cart-section__title">Корзина</h2>
-                            <button className="cart-section__clear-btn">Очистить всё</button>
+                            <button className="cart-section__clear-btn" onClick={clearCart}>Очистить всё</button>
                         </div>
                         <div className="cart-section__content">
                             {itemList}
