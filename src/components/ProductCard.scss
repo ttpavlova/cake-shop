@@ -88,8 +88,15 @@
     &.cart-view {
         flex-direction: row;
         justify-content: flex-start;
-        margin-bottom: 20px;
         padding: 20px;
+        border-bottom: 1px solid #F9CCD3;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    &.cart-view:last-child {
+        border-radius: 0 0 10px 10px;
+        border-bottom: none;
     }
 
     &__counter {

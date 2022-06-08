@@ -94,8 +94,15 @@ function Cart(props) {
                         <div className="cart-section__header">
                             <h2 className="cart-section__title">Итого</h2>
                         </div>
-                        <div className="cart-section__content">
+                        <div className="cart-section__total">
                             {priceText}
+
+                            <button className="cart-section__pay-btn">
+                            К оформлению заказа
+                            <span className="material-symbols-outlined arrow-icon">
+                                navigate_next
+                            </span>
+                        </button>
                         </div>
                     </div>
                 </div>
