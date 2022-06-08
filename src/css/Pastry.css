@@ -46,4 +46,10 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .filters {
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=Pastry.css.map */
