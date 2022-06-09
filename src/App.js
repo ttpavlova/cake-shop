@@ -16,10 +16,10 @@ const CAKES_DATA = [
 ]
 
 const PASTRY_DATA = [
-  {id: "pastry1", name: "Бисквитное пирожное", description: "описание бисквитного пирожного", price: 100, type: "biscuit", quantity: 0, img: "promo.jpg"},
-  {id: "pastry2", name: "Песочное пирожное", description: "описание песочного пирожного", price: 120, type: "shortbread", quantity: 0, img: "promo.jpg"},
-  {id: "pastry3", name: "Наполеон", description: "описание слоёного пирожного", price: 150, type: "flaky", quantity: 0, img: "napoleon.webp"},
-  {id: "pastry4", name: "Заварное пирожное", description: "описание заварного пирожного", price: 80, type: "custard", quantity: 0, img: "napoleon.webp"}
+  {id: "pastry1", name: "Пирожное «Ламингтон»", description: "описание бисквитного пирожного", price: 100, type: "biscuit", quantity: 0, img: "lamington.jpg"},
+  {id: "pastry2", name: "Корзиночка с фруктами", description: "описание песочного пирожного", price: 120, type: "shortbread", quantity: 0, img: "fruit-basket.jpg"},
+  {id: "pastry3", name: "Пирожное «Наполеон»", description: "описание слоёного пирожного", price: 150, type: "flaky", quantity: 0, img: "napoleon.webp"},
+  {id: "pastry4", name: "Профитроли с заварным кремом", description: "описание заварного пирожного", price: 80, type: "custard", quantity: 0, img: "profitroles.webp"}
 ]
 
 const ICECREAM_DATA = [

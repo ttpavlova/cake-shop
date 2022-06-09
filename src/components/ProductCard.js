@@ -22,14 +22,17 @@ function ProductCard(props) {
     const images = importAll(require.context('../img', false, /\.(png|jpe?g|svg|webp)$/));
 
     const mainTemplate = (
-        <div className="container">
-            <div className="card__img-wrapper">
-                <img className="card__img" src={images[props.img]} alt="product image" />
+        <div className="card__container">
+            <div className="card__main">
+                <div className="card__img-wrapper">
+                    <img className="card__img" src={images[props.img]} alt="product image" />
+                </div>
+                <div className="card__text">
+                    <div className="card__title">{props.name}</div>
+                    <div className="card__description">{props.description}</div>
+                </div>
             </div>
-            <div className="card__text">
-                <div className="card__title">{props.name}</div>
-                <div className="card__description">{props.description}</div>
-            </div>
+            
             <div className="card__footer">
                 <div className="card__price">{props.price} ₽</div>
                 <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
@@ -38,8 +41,8 @@ function ProductCard(props) {
     );
 
     const cartTemplate = (
-        <div className="container cart-view">
-            <div className="card__content">
+        <div className="card__container cart-view">
+            <div className="card__main cart-view">
                 <div className="card__img-wrapper cart-view">
                     <img className="card__img" src={images[props.img]} alt="product image" />
                 </div>
