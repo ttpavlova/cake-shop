@@ -13,10 +13,18 @@ function ProductCard(props) {
         return price * numberOfItems;
     }
 
+    function importAll(r) {
+        let images = {};
+        r.keys().map(item => { images[item.replace('./', '')] = r(item); });
+        return images;
+    }
+    
+    const images = importAll(require.context('../img', false, /\.(png|jpe?g|svg|webp)$/));
+
     const mainTemplate = (
         <div className="container">
             <div className="card__img-wrapper">
-                <div className="card__img"></div>
+                <img className="card__img" src={images[props.img]} alt="product image" />
             </div>
             <div className="card__text">
                 <div className="card__title">{props.name}</div>
@@ -33,7 +41,7 @@ function ProductCard(props) {
         <div className="container cart-view">
             <div className="card__content">
                 <div className="card__img-wrapper cart-view">
-                    <div className="card__img"></div>
+                    <img className="card__img" src={images[props.img]} alt="product image" />
                 </div>
                 <div className="card__text cart-view">
                     <div className="card__title">{props.name}</div>

@@ -9,17 +9,17 @@ import Cart from './components/Cart';
 import Footer from './components/Footer';
 
 const CAKES_DATA = [
-  {id: "cake1", name: "Сметанный торт", description: "описание сметанного торта", price: 200, type: "sour-cream", quantity: 0},
-  {id: "cake2", name: "Шоколадный торт", description: "описание шоколадного торта", price: 300, type: "chocolate", quantity: 0},
-  {id: "cake3", name: "Фруктовый торт", description: "описание фруктового торта", price: 250, type: "fruit", quantity: 0},
-  {id: "cake4", name: "Ягодный торт", description: "описание ягодного торта", price: 270, type: "berry", quantity: 0}
+  {id: "cake1", name: "Сметанный торт", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", price: 200, type: "sour-cream", quantity: 0},
+  {id: "cake2", name: "Шоколадный торт", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", price: 300, type: "chocolate", quantity: 0},
+  {id: "cake3", name: "Фруктовый торт", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", price: 250, type: "fruit", quantity: 0},
+  {id: "cake4", name: "Ягодный торт", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", price: 270, type: "berry", quantity: 0}
 ]
 
 const PASTRY_DATA = [
-  {id: "pastry1", name: "Бисквитное пирожное", description: "описание бисквитного пирожного", price: 100, type: "biscuit", quantity: 0},
-  {id: "pastry2", name: "Песочное пирожное", description: "описание песочного пирожного", price: 120, type: "shortbread", quantity: 0},
-  {id: "pastry3", name: "Слоёное пирожное", description: "описание слоёного пирожного", price: 150, type: "flaky", quantity: 0},
-  {id: "pastry4", name: "Заварное пирожное", description: "описание заварного пирожного", price: 80, type: "custard", quantity: 0}
+  {id: "pastry1", name: "Бисквитное пирожное", description: "описание бисквитного пирожного", price: 100, type: "biscuit", quantity: 0, img: "promo.jpg"},
+  {id: "pastry2", name: "Песочное пирожное", description: "описание песочного пирожного", price: 120, type: "shortbread", quantity: 0, img: "promo.jpg"},
+  {id: "pastry3", name: "Наполеон", description: "описание слоёного пирожного", price: 150, type: "flaky", quantity: 0, img: "napoleon.webp"},
+  {id: "pastry4", name: "Заварное пирожное", description: "описание заварного пирожного", price: 80, type: "custard", quantity: 0, img: "napoleon.webp"}
 ]
 
 const ICECREAM_DATA = [

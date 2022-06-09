@@ -77,6 +77,7 @@ function Cart(props) {
             price={item.price}
             type={item.type}
             quantity={item.quantity}
+            img={item.img}
             handleDecreaseQuantity={() => handleDecreaseQuantity(item.id)}
             handleIncreaseQuantity={() => handleIncreaseQuantity(item.id)}
             key={item.id}
