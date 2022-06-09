@@ -93,6 +93,7 @@ function App() {
               pastry={PASTRY_DATA}
               iceCream={ICECREAM_DATA}
               drinks={DRINKS_DATA}
+              allData={ALL_DATA}
               items={items}
               onClick={(id) => addToCart(id)}
               setItems={setItems}

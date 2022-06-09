@@ -3,21 +3,17 @@ import "../css/Popular.css";
 import ProductCard from "./ProductCard";
 
 function Popular(props) {
-    const cakeList = props.cakes.filter(cake => cake.id === "cake2" || cake.id === "cake3");
-    
-    const pastryList = props.pastry.filter(pastry => pastry.id === "pastry2" || pastry.id === "pastry3");
+    const popularItems = props.allData.filter(item => item.id === "cake2" || item.id === "cake3" || item.id === "pastry2" || item.id === "pastry3");
 
-    const allItemsList = cakeList.concat(pastryList);
-
-    const popularList = allItemsList.map(item => (
+    const popularList = popularItems.map(item => (
         <ProductCard
             id={item.id}
             name={item.name}
             description={item.description}
             price={item.price}
             type={item.type}
+            onClick={() => props.onClick(item.id)}
             key={item.id}
-            className={"view"}
         />
     ));
 

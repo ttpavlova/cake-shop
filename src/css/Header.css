@@ -97,6 +97,7 @@
     display: none;
   }
   .nav__link {
+    margin: 0;
     padding: 15px 0;
   }
   .nav__link:last-child {

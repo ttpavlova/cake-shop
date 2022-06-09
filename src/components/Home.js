@@ -12,6 +12,7 @@ function Home(props) {
     const PASTRY_DATA = props.pastry;
     const ICECREAM_DATA = props.iceCream;
     const DRINKS_DATA = props.drinks;
+    const ALL_DATA = props.allData;
     const items = props.items;
     
     return (
@@ -19,7 +20,11 @@ function Home(props) {
 
             <Promo />
 
-            <Popular cakes={CAKES_DATA} pastry={PASTRY_DATA} />
+            <Popular
+                allData={ALL_DATA}
+                items={items}
+                onClick={(id) => props.onClick(id)}
+            />
 
             <Cakes
                 cakes={CAKES_DATA}
