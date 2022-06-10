@@ -15,7 +15,10 @@ function ProductCard(props) {
 
     function importAll(r) {
         let images = {};
-        r.keys().map(item => { images[item.replace('./', '')] = r(item); });
+        r.keys().map(item =>  {
+            images[item.replace('./', '')] = r(item);
+            return item;
+        });
         return images;
     }
     
@@ -25,7 +28,7 @@ function ProductCard(props) {
         <div className="card__container">
             <div className="card__main">
                 <div className="card__img-wrapper">
-                    <img className="card__img" src={images[props.img]} alt="product image" />
+                    <img className="card__img" src={images[props.img]} alt="product" />
                 </div>
                 <div className="card__text">
                     <div className="card__title">{props.name}</div>
@@ -44,11 +47,11 @@ function ProductCard(props) {
         <div className="card__container cart-view">
             <div className="card__main cart-view">
                 <div className="card__img-wrapper cart-view">
-                    <img className="card__img" src={images[props.img]} alt="product image" />
+                    <img className="card__img cart-view" src={images[props.img]} alt="product" />
                 </div>
                 <div className="card__text cart-view">
                     <div className="card__title">{props.name}</div>
-                    <div className="card__description">{props.description}</div>
+                    <div className="card__description cart-view">{props.description}</div>
                 </div>
             </div>
             

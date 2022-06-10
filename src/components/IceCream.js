@@ -10,6 +10,7 @@ function IceCream(props) {
             description={iceCream.description}
             price={iceCream.price}
             type={iceCream.type}
+            img={iceCream.img}
             onClick={() => props.onClick(iceCream.id)}
             key={iceCream.id}
         />

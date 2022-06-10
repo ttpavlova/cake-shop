@@ -32,6 +32,7 @@ function Cakes(props) {
             description={cake.description}
             price={cake.price}
             type={cake.type}
+            img={cake.img}
             onClick={() => props.onClick(cake.id)}
             key={cake.id}
         />

@@ -1,9 +1,8 @@
 .card {
     display: flex;
     flex-direction: column;
-    padding: 30px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
     box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.1);
 
     &__container {
@@ -22,39 +21,59 @@
     &__main {
         &.cart-view {
             display: flex;
+            align-items: center;
+            margin-bottom: 10px;
         }
     }
 
     &__img-wrapper {
-        width: 200px;
+        display: inline-block;
+        width: 100%;
         height: 200px;
-        margin: 20px auto;
+        overflow: hidden;
 
         &.cart-view {
-            display: flex;
-            align-items: center;
             width: 150px;
+            min-width: 150px;
             height: 150px;
-            margin: 10px;
         }
     }
 
     &__img {
-        max-width: 100%;
-        max-height: 100%;
+        display: block;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         background-color: #fff;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        transition: transform 0.5s;
+
+        &.cart-view {
+            min-width: 100%;
+            border-radius: 0;
+        }
+    }
+
+    &__img:hover {
+        transform: scale(1.1);
+
+        &.cart-view {
+            transform: none;
+        }
     }
 
     &__text {
         min-height: 85px;
-        margin: 0 0 20px 0;
+        margin: 30px;
 
         &.cart-view {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            max-width: 350px;
             margin: 20px;
         }
     }
@@ -67,12 +86,17 @@
 
     &__description {
         font-size: 16px;
+
+        &.cart-view {
+            display: none;
+        }
     }
 
     &__footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 30px 30px 30px;
 
         &.cart-view {
             margin-left: auto;
@@ -165,7 +189,7 @@
                 flex-direction: column;
             }
         }
-        
+
         &__footer {
             flex-direction: row-reverse;
 

@@ -10,6 +10,7 @@ function Drinks(props) {
             description={item.description}
             price={item.price}
             type={item.type}
+            img={item.img}
             onClick={() => props.onClick(item.id)}
             key={item.id}
         />
