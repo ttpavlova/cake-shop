@@ -21,7 +21,7 @@ const CAKES_DATA = [
 
 const PASTRY_DATA = [
   {id: "pastry1", name: "Пирожное «Ламингтон»", description: "Бисквит, шоколадная глазурь, кокосовые стружки", price: 100, type: "biscuit", quantity: 0, img: "lamington.jpg"},
-  {id: "pastry2", name: "Корзинка с ягодами", description: "Песочная основа, повидло, ягоды черники, малины и ежевики", price: 120, type: "shortbread", quantity: 0, img: "berry-basket-cake.jpg"},
+  {id: "pastry2", name: "Корзинка с ягодами", description: "Песочная основа, повидло, ягоды чёрной и красной смородины", price: 120, type: "shortbread", quantity: 0, img: "berry-basket-cake.jpg"},
   {id: "pastry3", name: "Пирожное «Наполеон»", description: "Слоёные коржи, сливочно-заварной крем", price: 150, type: "flaky", quantity: 0, img: "napoleon-cake.jpg"},
   {id: "pastry4", name: "Профитроли с заварным кремом", description: "Заварное тесто, заварной крем", price: 80, type: "custard", quantity: 0, img: "profitroles.jpg"}
 ]
