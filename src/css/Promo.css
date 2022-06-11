@@ -25,7 +25,6 @@
   max-width: 50%;
   height: calc(100vh - 67px);
   right: 0;
-  border: 1px solid black;
 }
 
 .promo__img {
@@ -39,7 +38,6 @@
 
 .promo__text-wrapper {
   max-width: 400px;
-  border: 1px solid blue;
 }
 
 .promo__title {

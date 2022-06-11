@@ -4,6 +4,7 @@
     top: 0;
     z-index: 10;
     background-color: #fff;
+    box-shadow: 0 3px 20px 2px rgba(0, 0, 0, 0.1);
 }
 
 .header__container {
@@ -45,7 +46,13 @@
 * > a {
     display: inline-block;
     width: 100%;
+    color: #000;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+* > a:hover {
+    color: rgba(170, 25, 69, 0.8);
 }
 
 .burger-menu-btn {
