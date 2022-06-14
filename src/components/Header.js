@@ -12,33 +12,31 @@ function Header(props) {
         <header className={"header" + (isMenuOpened ? " mobile" : "")}>
             <div className={"header__container" + (isMenuOpened ? " mobile" : "")}>
                 <div className={"logo" + (isMenuOpened ? " mobile" : "")}>
-                    <a href="/">Cake Shop</a>
+                    <a className="nav__link" href="/">Cake Shop</a>
                 </div>
                 <ul className={"nav" + (isMenuOpened ? " active" : "")}>
-                    <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
-                        <HashLink smooth to="/#cakes">Торты</HashLink>
+                    <li className="nav__item" onClick={() => {setMenuOpened(false)}}>
+                        <HashLink className="nav__link" smooth to="/#cakes">Торты</HashLink>
                     </li>
-                    <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
-                        <HashLink smooth to="/#pastry">Пирожные</HashLink>
+                    <li className="nav__item" onClick={() => {setMenuOpened(false)}}>
+                        <HashLink className="nav__link" smooth to="/#pastry">Пирожные</HashLink>
                     </li>
-                    <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
-                        <HashLink smooth to="/#ice-cream">Мороженое</HashLink>
+                    <li className="nav__item" onClick={() => {setMenuOpened(false)}}>
+                        <HashLink className="nav__link" smooth to="/#ice-cream">Мороженое</HashLink>
                     </li>
-                    <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
-                        <HashLink smooth to="/#drinks">Напитки</HashLink>
+                    <li className="nav__item" onClick={() => {setMenuOpened(false)}}>
+                        <HashLink className="nav__link" smooth to="/#drinks">Напитки</HashLink>
                     </li>
-                    <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
-                        <Link to="/about">О нас</Link>
+                    <li className="nav__item" onClick={() => {setMenuOpened(false)}}>
+                        <Link className="nav__link" to="/about">О нас</Link>
                     </li>
-                    <li className="nav__link" onClick={() => {setMenuOpened(false)}}>
-                        <Link to="/contacts">Контакты</Link>
+                    <li className="nav__item" onClick={() => {setMenuOpened(false)}}>
+                        <Link className="nav__link" to="/contacts">Контакты</Link>
                     </li>
                 </ul>
                 <div className={"cart" + (isMenuOpened ? "" : " hidden")} onClick={() => {setMenuOpened(false)}}>
-                    <Link className="cart__text-part" to="/cart">
-                        <span className="cart__count">{cartItemsCount + " "}</span>
-                        <span className="cart__text">Корзина</span>
-                    </Link>
+                    <span className="cart__count">{cartItemsCount + " "}</span>
+                    <Link className="nav__link cart__text" to="/cart">Корзина</Link>
                 </div>
                 <button type="button" className={"burger-menu-btn" + (isMenuOpened ? " hidden" : "")} onClick={() => {setMenuOpened(true)}}>
                     <span className="material-symbols-outlined">

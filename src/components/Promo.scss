@@ -25,7 +25,6 @@ $header: 67px;
         max-width: 50%;
         height: calc(100vh - #{$header});
         right: 0;
-        // border: 1px solid black;
     }
 
     &__img {
@@ -39,7 +38,6 @@ $header: 67px;
 
     &__text-wrapper {
         max-width: 500px;
-        // border: 1px solid blue;
     }
 
     &__title {
@@ -52,6 +50,7 @@ $header: 67px;
     &__text {
         margin: 20px 0;
         text-align: left;
+        font-size: 18px;
         color: #4b4b4b;
     }
 
