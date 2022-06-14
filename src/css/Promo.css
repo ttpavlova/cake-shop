@@ -1,6 +1,6 @@
 .promo {
   width: 100%;
-  height: calc(100vh - 67px);
+  height: calc(100vh - 60px);
   top: 0;
   background-color: #fff;
 }
@@ -22,7 +22,7 @@
   position: absolute;
   width: 1000px;
   max-width: 50%;
-  height: calc(100vh - 67px);
+  height: calc(100vh - 60px);
   right: 0;
 }
 
