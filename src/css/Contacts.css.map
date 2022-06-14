@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAGA,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,CAAC;EACZ,UAAU,EAAE,yBAAqC;CACpD",
-    "sources": [
-        "../components/Contacts.scss"
-    ],
-    "names": [],
-    "file": "Contacts.css"
-}
+{"version":3,"sources":["../components/Contacts.scss","Contacts.css"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,YAAA;EACA,qCAAA;ACFJ","file":"Contacts.css"}

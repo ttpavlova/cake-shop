@@ -1,10 +1,5 @@
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   min-height: calc(100vh - 60px - 70px);
-}
-/*# sourceMappingURL=Contacts.css.map */
+}/*# sourceMappingURL=Contacts.css.map */

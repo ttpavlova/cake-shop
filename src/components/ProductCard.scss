@@ -1,3 +1,5 @@
+@use "../Variables";
+
 .card {
     display: flex;
     flex-direction: column;
@@ -130,7 +132,7 @@
         flex-direction: row;
         justify-content: flex-start;
         padding: 20px;
-        border: 1px solid #F9CCD3;
+        border: 1px solid Variables.$secondary;
         border-top: none;
         border-radius: 0;
         box-shadow: none;

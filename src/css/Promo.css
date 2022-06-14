@@ -4,23 +4,19 @@
   top: 0;
   background-color: #fff;
 }
-
 .promo__left {
   position: absolute;
   width: 100%;
   top: 55%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .promo__container {
   width: 100%;
   height: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
-
 .promo__img-wrapper {
   position: absolute;
   width: 1000px;
@@ -28,7 +24,6 @@
   height: calc(100vh - 60px);
   right: 0;
 }
-
 .promo__img {
   width: 100%;
   height: 100%;
@@ -37,46 +32,36 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .promo__text-wrapper {
   max-width: 500px;
 }
-
 .promo__title {
   font-size: 56px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
   color: #1b1b1b;
 }
-
 .promo__text {
   margin: 20px 0 50px 0;
   text-align: left;
   font-size: 18px;
   color: #4b4b4b;
 }
-
 .promo__btn {
   padding: 15px 25px;
   border: 1px solid #4b4b4b;
   border-radius: 30px;
   cursor: pointer;
 }
-
 .promo__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
   font-size: 18px;
   font-weight: 600;
   color: #4b4b4b;
   text-decoration: none;
 }
-
 .promo__link > .arrow {
   margin-left: 10px;
 }
@@ -85,11 +70,12 @@
   .promo__img-wrapper {
     max-width: 100%;
   }
+
   .promo__left {
     top: 55%;
   }
+
   .promo__text-wrapper {
     margin: 0 auto;
   }
-}
-/*# sourceMappingURL=Promo.css.map */
+}/*# sourceMappingURL=Promo.css.map */

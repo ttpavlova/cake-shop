@@ -8,8 +8,7 @@
   cursor: pointer;
 }
 
-.filter__button[aria-pressed="true"] {
+.filter__button[aria-pressed=true] {
   color: #4d4d4d;
   border-color: #AA1945;
-}
-/*# sourceMappingURL=FilterButton.css.map */
+}/*# sourceMappingURL=FilterButton.css.map */
