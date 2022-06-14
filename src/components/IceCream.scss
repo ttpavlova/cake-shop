@@ -1,6 +1,6 @@
 .ice-cream {
     width: 100%;
-    padding: 40px 40px;
+    padding: 50px 40px 60px 40px;
     background-color: #F9CCD3;
 
     &__container {
@@ -10,8 +10,10 @@
     }
 
     &__title {
-        margin: 20px 0;
-        font-size: 24px;
+        margin: 20px 0 40px 0;
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
     }
 }
 

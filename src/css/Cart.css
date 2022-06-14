@@ -60,7 +60,9 @@
 
 .cart-section__title {
   margin: 0;
-  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .cart-section__clear-btn {

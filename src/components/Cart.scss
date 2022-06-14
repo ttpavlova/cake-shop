@@ -42,7 +42,10 @@ $footer: 70px;
 
     &__title {
         margin: 0;
-        font-size: 24px;
+        // margin: 0 0 40px 0;
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
     }
 
     &__clear-btn {

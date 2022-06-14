@@ -54,7 +54,7 @@ function Popular(props) {
     ));
 
     return (
-        <section className="popular">
+        <section className="popular" id="popular">
             <div className="popular__container">
                 <Slider {...settings}>
                     {popularList}

@@ -33,6 +33,10 @@
 
 // slider
 
+.slick-list {
+    margin-bottom: 20px;
+}
+
 .slick-slide {
     width: 300px !important;
     height: 440px;
@@ -72,9 +76,9 @@
 
 .slick-arrow {
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    margin: 0 -50px;
+    // margin: 0 -50px;
     z-index: 10;
     cursor: pointer;
 
