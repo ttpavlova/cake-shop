@@ -30,6 +30,7 @@
         display: inline-block;
         width: 100%;
         height: 200px;
+        border-radius: 10px 10px 0 0;
         overflow: hidden;
 
         &.cart-view {
@@ -41,7 +42,6 @@
 
     &__img {
         display: block;
-        border-radius: 10px 10px 0 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
