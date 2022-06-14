@@ -27,18 +27,18 @@ const PASTRY_DATA = [
 ]
 
 const ICECREAM_DATA = [
-  {id: "ice-cream1", name: "Пломбир классический", description: "Мороженое с классическим ванильным вкусом", price: 50, type: "plombir", quantity: 0, img: "plombir-classic.jpg"},
-  {id: "ice-cream2", name: "Пломбир клубничный", description: "описание ...", price: 50, type: "plombir", quantity: 0, img: "plombir-strawberry.jpg"},
-  {id: "ice-cream3", name: "Пломбир шоколадный", description: "описание ...", price: 50, type: "plombir", quantity: 0, img: "plombir-chocolate.jpg"},
-  {id: "ice-cream4", name: "Фисташковый пломбир", description: "Мороженое с добавлением фисташек", price: 50, type: "plombir", quantity: 0, img: "plombir-pistachio.jpg"},
+  {id: "ice-cream1", name: "Пломбир ванильный", description: "", price: 50, type: "plombir", quantity: 0, img: "plombir-classic.jpg"},
+  {id: "ice-cream2", name: "Пломбир клубничный", description: "", price: 50, type: "plombir", quantity: 0, img: "plombir-strawberry.jpg"},
+  {id: "ice-cream3", name: "Пломбир шоколадный", description: "", price: 50, type: "plombir", quantity: 0, img: "plombir-chocolate.jpg"},
+  {id: "ice-cream4", name: "Пломбир фисташковый", description: "Мороженое с фисташками", price: 50, type: "plombir", quantity: 0, img: "plombir-pistachio.jpg"},
   {id: "ice-cream5", name: "Пломбир черничный", description: "Мороженое с ягодами черники и кусочками кешью", price: 50, type: "plombir", quantity: 0, img: "plombir-blueberry.jpg"},
 ]
 
 const DRINKS_DATA = [
-  {id: "drink1", name: "Сок апельсиновый", description: "...", price: 30, type: "", quantity: 0, img: "orange-juice.jpg"},
-  {id: "drink2", name: "Чай зелёный", description: "...", price: 60, type: "", quantity: 0, img: "green-tea.jpg"},
-  {id: "drink3", name: "Чай чёрный", description: "...", price: 70, type: "", quantity: 0, img: "black-tea.jpg"},
-  {id: "drink4", name: "Кофе Американо", description: "...", price: 80, type: "", quantity: 0, img: "coffee-americano.jpg"},
+  {id: "drink1", name: "Сок апельсиновый", description: "", price: 30, type: "", quantity: 0, img: "orange-juice.jpg"},
+  {id: "drink2", name: "Чай зелёный", description: "", price: 60, type: "", quantity: 0, img: "green-tea.jpg"},
+  {id: "drink3", name: "Чай чёрный", description: "", price: 70, type: "", quantity: 0, img: "black-tea.jpg"},
+  {id: "drink4", name: "Кофе Американо", description: "", price: 80, type: "", quantity: 0, img: "coffee-americano.jpg"},
 ]
 
 const ALL_DATA = CAKES_DATA.concat(PASTRY_DATA, ICECREAM_DATA, DRINKS_DATA);

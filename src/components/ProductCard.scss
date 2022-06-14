@@ -66,7 +66,6 @@
     }
 
     &__text {
-        min-height: 85px;
         margin: 30px;
 
         &.cart-view {
@@ -79,12 +78,12 @@
     }
 
     &__title {
-        margin-bottom: 5px;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
     }
 
     &__description {
+        margin-top: 10px;
         font-size: 16px;
 
         &.cart-view {
@@ -113,6 +112,7 @@
     &__submit {
         padding: 10px 20px;
         font-size: 18px;
+        font-weight: 600;
         color: #fff;
         background-color: #AA1945;
         border-radius: 30px;
