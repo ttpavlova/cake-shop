@@ -1,7 +1,7 @@
 import React from 'react';
 import "../css/style.css";
 import Promo from './Promo';
-import Popular from './Popular';
+import DessertOfTheDay from './DessertOfTheDay';
 import Cakes from './Cakes';
 import Pastry from './Pastry';
 import IceCream from './IceCream';
@@ -20,7 +20,7 @@ function Home(props) {
 
             <Promo />
 
-            <Popular
+            <DessertOfTheDay
                 allData={ALL_DATA}
                 items={items}
                 onClick={(id) => props.onClick(id)}
