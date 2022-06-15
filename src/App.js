@@ -83,6 +83,49 @@ function App() {
     setTotalPrice(sum);
   }
 
+  function getDayName() {
+    let date = new Date();
+    let options = { weekday: "long"};
+
+    let dayName = new Intl.DateTimeFormat("ru-RU", options).format(date);
+
+    return dayName;
+  }
+
+  function defineDessertOfTheDay(dayName) {
+    let dessertId = "";
+
+    switch(dayName) {
+      case "понедельник":
+        dessertId = "pastry1";
+        break;
+      case "вторник":
+        dessertId = "pastry3";
+        break;
+      case "среда":
+        dessertId = "cake6";
+        break;
+      case "четверг":
+        dessertId = "cake3";
+        break;
+      case "пятница":
+        dessertId = "cake7";
+        break;
+      case "суббота":
+        dessertId = "pastry2";
+        break;
+      case "воскресенье":
+        dessertId = "cake8";
+        break;
+      default:
+        dessertId = "cake6";
+    }
+
+    return dessertId;
+  }
+
+  defineDessertOfTheDay(getDayName());
+
   return (
     <BrowserRouter>
       <Header
