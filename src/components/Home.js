@@ -36,6 +36,7 @@ function Home(props) {
             />
 
             <Pastry
+                dessertOfTheDayId={dessertOfTheDayId}
                 pastry={PASTRY_DATA}
                 items={items}
                 onClick={(id) => props.onClick(id)}
