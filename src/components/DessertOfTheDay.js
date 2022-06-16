@@ -29,7 +29,7 @@ function DessertOfTheDay(props) {
                 <div className="dessert-of-the-day__container">
                     <div className="dessert-of-the-day__text-wrapper">
                         <h2 className="dessert-of-the-day__title">Десерт дня</h2>
-                        <p className="dessert-of-the-day__text">Закажите Десерт дня сегодня и получите скидку <p className="price-accent">10%!</p></p>
+                        <p className="dessert-of-the-day__text">Закажите Десерт дня сегодня и получите скидку <span className="price-accent">10%!</span></p>
                     </div>
                 </div>
             </div>

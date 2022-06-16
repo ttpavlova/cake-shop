@@ -15,6 +15,7 @@ const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function Cakes(props) {
     const [filter, setFilter] = useState("Все");
+    const dessertOfTheDayId = props.dessertOfTheDayId;
 
     const filterList = FILTER_NAMES.map(name => (
         <FilterButton
@@ -34,6 +35,7 @@ function Cakes(props) {
             type={cake.type}
             img={cake.img}
             onClick={() => props.onClick(cake.id)}
+            dessertOfTheDayId={dessertOfTheDayId}
             key={cake.id}
         />
     ));

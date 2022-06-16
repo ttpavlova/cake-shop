@@ -2,6 +2,7 @@ import React from "react";
 import "../css/ProductCard.css";
 
 function ProductCard(props) {
+    const dessertOfTheDayId = props.dessertOfTheDayId;
 
     function isCartView() {
         if (props.className === "cart-view") {
@@ -29,6 +30,20 @@ function ProductCard(props) {
         return price * numberOfItems;
     }
 
+    function isSpecialItem(id) {
+        if (id === dessertOfTheDayId) {
+            return true;
+        }
+    }
+
+    function countDessertOfTheDayPrice(id, price) {
+        let discount = 0.1;
+        if (id === dessertOfTheDayId) {
+            return price * (1 - discount);
+        }
+        return price;
+    }
+
     function importAll(r) {
         let images = {};
         r.keys().map(item =>  {
@@ -52,9 +67,12 @@ function ProductCard(props) {
                 </div>
             </div>
             
-            <div className="card__footer">
-                <div className="card__price">{props.price} ₽</div>
-                <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
+            <div className="card__footer normal-view">
+                <div className={"card__old-price normal-view" + (isSpecialItem(props.id) ? "" : " hidden")}>{props.price} ₽</div>
+                <div className="card__bottom-part">
+                    <div className="card__price">{countDessertOfTheDayPrice(props.id, props.price)} ₽</div>
+                    <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
+                </div>
             </div>
         </div>
     );
@@ -99,8 +117,8 @@ function ProductCard(props) {
 
                 <div className="card__footer">
                     <div className="card__prices">
-                        <div className="card__old-price">{props.price} ₽</div>
-                        <div className="card__new-price">{props.price} ₽</div>
+                        <div className="card__old-price special-view">{props.price} ₽</div>
+                        <div className="card__new-price">{props.price * 0.9} ₽</div>
                     </div>
                     <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
                 </div>
