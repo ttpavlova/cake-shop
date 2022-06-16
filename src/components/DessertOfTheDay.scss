@@ -1,8 +1,56 @@
 @use "../Variables";
 
 .dessert-of-the-day {
+    position: relative;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - #{Variables.$header});
     top: 0;
     background-color: #fff;
+
+    &__card-part {
+        max-width: 50%;
+        height: 100%;
+    }
+
+    &__text-part {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    &__text-wrapper {
+        max-width: 500px;
+    }
+
+    &__title {
+        font-size: 56px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #1b1b1b;
+    }
+
+    &__text {
+        margin: 20px 0 50px 0;
+        text-align: left;
+        font-size: 18px;
+        color: #4b4b4b;
+    }
+}
+
+.price-accent {
+    display: inline;
+    font-size: 28px;
+    font-weight: 600;
+    color: Variables.$accent;
 }

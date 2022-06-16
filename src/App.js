@@ -124,7 +124,7 @@ function App() {
     return dessertId;
   }
 
-  defineDessertOfTheDay(getDayName());
+  const dessertOfTheDayId = defineDessertOfTheDay(getDayName());
 
   return (
     <BrowserRouter>
@@ -136,6 +136,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <Home
+              dessertOfTheDayId={dessertOfTheDayId}
               cakes={CAKES_DATA}
               pastry={PASTRY_DATA}
               iceCream={ICECREAM_DATA}

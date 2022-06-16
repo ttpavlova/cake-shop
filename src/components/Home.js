@@ -8,6 +8,7 @@ import IceCream from './IceCream';
 import Drinks from './Drinks';
 
 function Home(props) {
+    const dessertOfTheDayId = props.dessertOfTheDayId;
     const CAKES_DATA = props.cakes;
     const PASTRY_DATA = props.pastry;
     const ICECREAM_DATA = props.iceCream;
@@ -21,6 +22,7 @@ function Home(props) {
             <Promo />
 
             <DessertOfTheDay
+                dessertOfTheDayId={dessertOfTheDayId}
                 allData={ALL_DATA}
                 items={items}
                 onClick={(id) => props.onClick(id)}

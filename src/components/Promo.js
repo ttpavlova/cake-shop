@@ -1,12 +1,13 @@
 import React from "react";
 import "../css/Promo.css";
 import { HashLink } from 'react-router-hash-link';
+import promoImg from "../img/promo-bg-3.jpg";
 
 function Promo() {
     return (
         <div className="promo">
             <div className="promo__img-wrapper">
-                <div className="promo__img"></div>
+                <img src={promoImg} className="promo__img" alt="promo"></img>
             </div>
             <div className="promo__left">
                 <div className="promo__container">

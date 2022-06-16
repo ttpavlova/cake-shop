@@ -9,6 +9,22 @@ function ProductCard(props) {
         }
     }
 
+    function isSpecialtView() {
+        if (props.className === "special-view") {
+            return true;
+        }
+    }
+
+    function getTemplate() {
+        if (isCartView()) {
+            return cartTemplate;
+        }
+        else if (isSpecialtView()) {
+            return dessertOfTheDayTemplate;
+        }
+        return mainTemplate;
+    }
+
     function countPrice(price, numberOfItems) {
         return price * numberOfItems;
     }
@@ -69,9 +85,36 @@ function ProductCard(props) {
         </div>
     );
 
+    const dessertOfTheDayTemplate = (
+        <div className="card__container special-view">
+            <div className="card__img-wrapper special-view">
+                <img className="card__img special-view" src={images[props.img]} alt="product" />
+            </div>
+                
+            <div className="card__text-part">
+                <div className="card__text">
+                    <div className="card__title">{props.name}</div>
+                    <div className="card__description">{props.description}</div>
+                </div>
+
+                <div className="card__footer">
+                    <div className="card__prices">
+                        <div className="card__old-price">{props.price} ₽</div>
+                        <div className="card__new-price">{props.price} ₽</div>
+                    </div>
+                    <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
+                </div>
+            </div>
+        </div>
+    );
+
     return (
-        <div className={"card" + (isCartView() ? " cart-view" : "")}>
-            {isCartView() ? cartTemplate : mainTemplate}
+        <div className={"card" + (
+                        isCartView() ? " cart-view"
+                        : isSpecialtView() ? " special-view"
+                        : "")}
+        >
+            {getTemplate()}
         </div>
     );
 }
