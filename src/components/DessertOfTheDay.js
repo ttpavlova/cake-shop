@@ -15,6 +15,7 @@ function DessertOfTheDay(props) {
             type={item.type}
             img={item.img}
             onClick={() => props.onClick(item.id)}
+            dessertOfTheDayId={dessertOfTheDayId}
             key={item.id}
             className="special-view"
         />

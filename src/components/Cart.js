@@ -3,6 +3,7 @@ import "../css/Cart.css";
 import ProductCard from "./ProductCard";
 
 function Cart(props) {
+    const dessertOfTheDayId = props.dessertOfTheDayId;
     const items = props.items;
     const setItems = props.setItems;
     const cartItemsCount = props.cartItemsCount;
@@ -80,6 +81,7 @@ function Cart(props) {
             img={item.img}
             handleDecreaseQuantity={() => handleDecreaseQuantity(item.id)}
             handleIncreaseQuantity={() => handleIncreaseQuantity(item.id)}
+            dessertOfTheDayId={dessertOfTheDayId}
             key={item.id}
             className="cart-view"
         />

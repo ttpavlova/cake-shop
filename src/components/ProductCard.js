@@ -44,6 +44,8 @@ function ProductCard(props) {
         return price;
     }
 
+    const dessertOfTheDayPrice = countDessertOfTheDayPrice(props.id, props.price);
+
     function importAll(r) {
         let images = {};
         r.keys().map(item =>  {
@@ -70,7 +72,7 @@ function ProductCard(props) {
             <div className="card__footer normal-view">
                 <div className={"card__old-price normal-view" + (isSpecialItem(props.id) ? "" : " hidden")}>{props.price} ₽</div>
                 <div className="card__bottom-part">
-                    <div className="card__price">{countDessertOfTheDayPrice(props.id, props.price)} ₽</div>
+                    <div className="card__price">{dessertOfTheDayPrice} ₽</div>
                     <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
                 </div>
             </div>
@@ -97,7 +99,7 @@ function ProductCard(props) {
                         <div className="counter__plus" onClick={props.handleIncreaseQuantity}>+</div>
                     </div>
                 </div>
-                <div className="card__price">{countPrice(props.price, props.quantity)} ₽</div>
+                <div className="card__price">{countPrice(dessertOfTheDayPrice, props.quantity)} ₽</div>
                 <div className="button card__submit cart-view">В корзину</div>
             </div>
         </div>
@@ -118,7 +120,7 @@ function ProductCard(props) {
                 <div className="card__footer">
                     <div className="card__prices">
                         <div className="card__old-price special-view">{props.price} ₽</div>
-                        <div className="card__new-price">{props.price * 0.9} ₽</div>
+                        <div className="card__new-price">{dessertOfTheDayPrice} ₽</div>
                     </div>
                     <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
                 </div>

@@ -73,10 +73,24 @@ function App() {
     setCartItemsCount(cartItemsCount);
   }
 
+  function countDessertOfTheDayPrice(id, price) {
+    let discount = 0.1;
+    if (id === dessertOfTheDayId) {
+        return price * (1 - discount);
+    }
+    return price;
+  }
+
   function calculateTotalPrice() {
     let sum = 0;
+    let price = 0;
     for (let i = 0; i < items.length; i++) {
-      let price = items[i].price * items[i].quantity;
+      if (items[i].id === dessertOfTheDayId) {
+        price = countDessertOfTheDayPrice(items[i].id, items[i].price) * items[i].quantity;
+      }
+      else {
+        price = items[i].price * items[i].quantity;
+      }
       sum = sum + price;
     }
     
@@ -152,6 +166,7 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/cart" element={
             <Cart
+              dessertOfTheDayId={dessertOfTheDayId}
               items={items}
               setItems={setItems}
               cartItemsCount={cartItemsCount}
