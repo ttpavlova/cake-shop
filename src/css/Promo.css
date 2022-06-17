@@ -95,6 +95,7 @@
   .promo__text {
     text-align: center;
     font-size: 20px;
+    line-height: 1.6;
   }
   .promo__link {
     font-size: 20px;
