@@ -44,4 +44,27 @@
   font-size: 28px;
   font-weight: 600;
   color: #AA1945;
+}
+
+@media screen and (max-width: 992px) {
+  .dessert-of-the-day {
+    display: flex;
+    flex-direction: column-reverse;
+    position: static;
+    height: 100%;
+  }
+  .dessert-of-the-day__card-part {
+    max-width: 100%;
+  }
+  .dessert-of-the-day__text-part {
+    position: static;
+    transform: none;
+  }
+  .dessert-of-the-day__container {
+    justify-content: center;
+  }
+  .dessert-of-the-day__text-wrapper, .dessert-of-the-day__text {
+    text-align: center;
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=DessertOfTheDay.css.map */

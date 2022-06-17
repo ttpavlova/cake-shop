@@ -53,3 +53,30 @@
     font-weight: 600;
     color: Variables.$accent;
 }
+
+@media screen and (max-width: 992px) {
+    .dessert-of-the-day {
+        display: flex;
+        flex-direction: column-reverse;
+        position: static;
+        height: 100%;
+
+        &__card-part {
+            max-width: 100%;
+        }
+
+        &__text-part {
+            position: static;
+            transform: none;
+        }
+
+        &__container {
+            justify-content: center;
+        }
+
+        &__text-wrapper, &__text {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}
