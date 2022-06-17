@@ -72,7 +72,8 @@
   }
   .promo__img-wrapper::after {
     content: "";
-    background: linear-gradient(to top, #FBE5C8, rgba(251, 229, 200, 0.3));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), 30%, transparent);
+    background-color: rgba(251, 229, 200, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -102,8 +103,13 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.4;
+    color: #000;
+  }
+  .promo__btn {
+    border: 1px solid #000;
   }
   .promo__link {
     font-size: 20px;
+    color: #000;
   }
 }/*# sourceMappingURL=Promo.css.map */

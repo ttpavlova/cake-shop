@@ -84,7 +84,9 @@
 
             &::after {
                 content: "";
-                background: linear-gradient(to top, Variables.$secondary, Variables.$secondary_opacity_03);
+                // background: linear-gradient(to bottom, Variables.$secondary, Variables.$secondary_opacity_03);
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), 30%, transparent);
+                background-color: Variables.$secondary_opacity_05;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -120,10 +122,16 @@
             font-size: 20px;
             font-weight: 500;
             line-height: 1.4;
+            color: #000;
+        }
+
+        &__btn {
+            border: 1px solid #000;
         }
 
         &__link {
             font-size: 20px;
+            color: #000;
         }
     }
 }
