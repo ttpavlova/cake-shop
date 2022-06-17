@@ -84,7 +84,7 @@
 
             &::after {
                 content: "";
-                background: linear-gradient(to top, Variables.$secondary, Variables.$secondary_opacity_02);
+                background: linear-gradient(to top, Variables.$secondary, Variables.$secondary_opacity_03);
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -115,6 +115,7 @@
         }
 
         &__text {
+            margin: 50px 0 60px 0;
             text-align: center;
             font-size: 20px;
             font-weight: 500;
