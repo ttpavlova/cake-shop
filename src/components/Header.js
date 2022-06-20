@@ -8,6 +8,12 @@ function Header(props) {
     const setMenuOpened = props.setMenuOpened;
     const cartItemsCount = props.cartItemsCount;
 
+    function areItemsInCart() {
+        if (cartItemsCount > 0) {
+            return true;
+        }
+    }
+
     return (
         <header className={"header" + (isMenuOpened ? " mobile" : "")}>
             <div className={"header__container" + (isMenuOpened ? " mobile" : "")}>
@@ -35,8 +41,12 @@ function Header(props) {
                     </li>
                 </ul>
                 <div className={"cart" + (isMenuOpened ? "" : " hidden")} onClick={() => {setMenuOpened(false)}}>
-                    <span className="cart__count">{cartItemsCount + " "}</span>
-                    <Link className="nav__link cart__text" to="/cart">Корзина</Link>
+                    <span className={"cart__count" + (areItemsInCart() ? "" : " hidden")}>{cartItemsCount + " "}</span>
+                    <Link className="nav__link cart__icon" to="/cart" title="Корзина">
+                        <span className="material-symbols-outlined cart-icon">
+                        shopping_cart
+                        </span>
+                    </Link>
                 </div>
                 <button type="button" className={"burger-menu-btn" + (isMenuOpened ? " hidden" : "")} onClick={() => {setMenuOpened(true)}}>
                     <span className="material-symbols-outlined">
