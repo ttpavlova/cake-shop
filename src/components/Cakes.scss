@@ -1,7 +1,9 @@
+@use "../Variables";
+
 .cakes {
     width: 100%;
     padding: 60px 40px 70px 40px;
-    background-color: #FBE5C8;
+    background-color: Variables.$secondary;
 
     &__container {
         width: 100%;

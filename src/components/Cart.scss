@@ -41,8 +41,6 @@
 
     &__title {
         margin: 0;
-        // margin: 0 0 40px 0;
-        // font-family: 'Oswald', sans-serif;
         font-size: 36px;
         font-weight: 500;
     }
@@ -79,14 +77,14 @@
         padding: 10px 25px;
         font-size: 18px;
         color: #fff;
-        background-color: rgba(170, 25, 69, 0.9);
+        background-color: Variables.$accent_opacity_08;
         border-radius: 30px;
         transition: background-color 0.1s linear;
         cursor: pointer;
     }
 
     &__checkout-btn:hover {
-        background-color: #9f1c43;
+        background-color: Variables.$accent_darker;
     }
 
     &__checkout-btn:hover .arrow-icon {

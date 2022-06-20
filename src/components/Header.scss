@@ -34,7 +34,7 @@
         transition: color 0.2s ease;
 
         &:hover {
-            color: rgba(170, 25, 69, 0.8);
+            color: Variables.$accent_opacity_08;
         }
     }
 }
@@ -52,7 +52,7 @@
         height: 30px;
         margin-right: 10px;
         color: #fff;
-        background-color: rgba(170, 25, 69, 0.8);
+        background-color: Variables.$accent_opacity_08;
         border-radius: 50%;
     }
 }
