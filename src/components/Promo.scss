@@ -75,6 +75,13 @@
             margin-left: 10px;
         }
     }
+
+    &__footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: Variables.$header;
+    }
 }
 
 @media screen and (max-width: 992px) {
