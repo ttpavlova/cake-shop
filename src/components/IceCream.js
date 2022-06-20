@@ -20,7 +20,7 @@ function IceCream(props) {
         <section className="ice-cream" id="ice-cream">
             <div className="ice-cream__container">
                 <h2 className="ice-cream__title">Мороженое</h2>
-                <div className="cards">
+                <div className="ice-cream__cards">
                     {iceCreamList}
                 </div>
             </div>

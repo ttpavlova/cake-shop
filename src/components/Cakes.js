@@ -44,10 +44,10 @@ function Cakes(props) {
         <section className="cakes" id="cakes">
             <div className="cakes__container">
                 <h2 className="cakes__title">Торты</h2>
-                <div className="filters">
+                <div className="cakes__filters">
                     {filterList}
                 </div>
-                <div className="cards">
+                <div className="cakes__cards">
                     {cakeList}
                 </div>
             </div>

@@ -14,15 +14,13 @@
   font-weight: 500;
   color: #1b1b1b;
 }
-
-.filters {
+.cakes__filters {
   display: flex;
   margin-bottom: 5px;
   padding-bottom: 15px;
   overflow: auto;
 }
-
-.cards {
+.cakes__cards {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -30,14 +28,9 @@
   max-width: 1280px;
   margin: 0 auto;
 }
-.cards__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 @media screen and (max-width: 768px) {
-  .filters {
+  .cakes__filters {
     margin-bottom: 10px;
   }
 }/*# sourceMappingURL=Cakes.css.map */

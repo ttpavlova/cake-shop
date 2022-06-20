@@ -20,7 +20,7 @@ function Drinks(props) {
         <section className="drinks" id="drinks">
             <div className="drinks__container">
                 <h2 className="drinks__title">Напитки</h2>
-                <div className="cards">
+                <div className="drinks__cards">
                     {drinksList}
                 </div>
             </div>

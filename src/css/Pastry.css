@@ -13,15 +13,13 @@
   font-size: 40px;
   font-weight: 500;
 }
-
-.filters {
+.pastry__filters {
   display: flex;
   margin-bottom: 5px;
   padding-bottom: 15px;
   overflow: auto;
 }
-
-.cards {
+.pastry__cards {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -29,14 +27,9 @@
   max-width: 1280px;
   margin: 0 auto;
 }
-.cards__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 @media screen and (max-width: 768px) {
-  .filters {
+  .pastry__filters {
     margin-bottom: 10px;
   }
 }/*# sourceMappingURL=Pastry.css.map */
