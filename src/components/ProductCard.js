@@ -81,6 +81,9 @@ function ProductCard(props) {
 
     const cartTemplate = (
         <div className="card__container cart-view">
+            <span className="material-symbols-outlined delete-icon" onClick={props.deleteFromCart}>
+                close
+            </span>
             <div className="card__main cart-view">
                 <div className="card__img-wrapper cart-view">
                     <img className="card__img cart-view" src={images[props.img]} alt="product" />

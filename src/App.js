@@ -52,9 +52,20 @@ function App() {
   function addToCart(id) {
     const updatedItems = items.map(item => {
         if (id === item.id) {
-            return {...item, quantity: item.quantity + 1};
+          return {...item, quantity: item.quantity + 1};
         }
         return item;
+    });
+
+    setItems(updatedItems);
+  }
+
+  function deleteFromCart(id) {
+    const updatedItems = items.map(item => {
+      if (id === item.id) {
+        return {...item, quantity: item.quantity = 0};
+      }
+      return item;
     });
 
     setItems(updatedItems);
@@ -168,6 +179,7 @@ function App() {
             <Cart
               dessertOfTheDayId={dessertOfTheDayId}
               items={items}
+              deleteFromCart={(id) => deleteFromCart(id)}
               setItems={setItems}
               cartItemsCount={cartItemsCount}
               totalPrice={totalPrice}
