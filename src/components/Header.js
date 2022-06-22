@@ -40,7 +40,7 @@ function Header(props) {
                         <Link className="nav__link" to="/contacts">Контакты</Link>
                     </li>
                 </ul>
-                <div className={"cart" + (isMenuOpened ? "" : " hidden")} onClick={() => {setMenuOpened(false)}}>
+                <div className={"cart" + (isMenuOpened ? " mobile" : "")} onClick={() => {setMenuOpened(false)}}>
                     <span className={"cart__count" + (areItemsInCart() ? "" : " hidden")}>{cartItemsCount + " "}</span>
                     <Link className="nav__link cart__icon" to="/cart" title="Корзина">
                         <span className="material-symbols-outlined cart-icon">

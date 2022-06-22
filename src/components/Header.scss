@@ -109,9 +109,12 @@
         height: auto;
     }
 
+    .logo {
+        margin-right: auto;
+    }
+
     .logo.mobile {
         padding-bottom: 15px;
-        border-bottom: 1px solid #5f5f5f;
     }
 
     .nav {
@@ -120,6 +123,10 @@
         &__item {
             margin: 0;
             padding: 15px 0;
+
+            &:first-child {
+                border-top: 1px solid #5f5f5f;
+            }
 
             &:last-child {
                 border-bottom: 1px solid #5f5f5f;
@@ -133,6 +140,11 @@
 
         &__link {
             transition: none;
+
+            &.cart__icon {
+                width: 24px;
+                height: 24px;
+            }
         }
 
         &.active {
@@ -142,20 +154,26 @@
     }
 
     .cart {
-        width: 100%;
-        padding: 15px 0;
+        margin-right: 40px;
 
         &__count {
             font-size: 20px;
             font-weight: 600;
+
+            &.hidden {
+                display: none;
+            }
         }
 
-        &.hidden {
-            display: none;
+        &.mobile {
+            margin: 0;
+            padding-top: 15px;
         }
     }
 
     .burger-menu-btn {
+        width: 24px;
+        height: 24px;
         display: block;
 
         &.hidden {
@@ -167,7 +185,9 @@
         display: block;
         position: absolute;
         right: 0;
-        padding: 0 20px;
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
         line-height: 1.2;
         color: #4d4d4d;
 
