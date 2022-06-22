@@ -77,9 +77,6 @@
 .cart-section__checkout-btn:hover .arrow-icon {
   margin-left: 10px;
 }
-.cart-section__checkout-btn.hidden {
-  display: none;
-}
 .cart-section.empty-cart-view {
   justify-content: center;
   align-items: center;
@@ -105,7 +102,7 @@
 
 .total__text {
   min-width: 200px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 .arrow-icon {

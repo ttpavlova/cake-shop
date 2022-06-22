@@ -93,10 +93,6 @@
         margin-left: 10px;
     }
 
-    &__checkout-btn.hidden {
-        display: none;
-    }
-
     // empty cart styles
 
     &.empty-cart-view {
@@ -128,7 +124,7 @@
 
 .total__text {
     min-width: 200px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
 }
 
 .arrow-icon {

@@ -11,24 +11,27 @@ function Cart(props) {
     const cartItemsCount = props.cartItemsCount;
     const totalPrice = props.totalPrice;
 
-    const cartEmptyMessage = (
-        <p>Корзина пуста</p>
-    );
-
     function totalPriceMessage() {
         let word = "";
-        switch (cartItemsCount) {
-            case 1:
+        let string = cartItemsCount.toString();
+        let lastCharacter = string.slice(string.length - 1);
+        switch (lastCharacter) {
+            case "1":
                 word = "товар";
                 break;
-            case 2:
-            case 3:
-            case 4:
+            case "2":
+            case "3":
+            case "4":
                 word = "товара";
                 break;
             default:
                 word = "товаров";
         }
+
+        if ((cartItemsCount > 10) && (cartItemsCount < 20)) {
+            word = "товаров";
+        }
+
         return <p className="total__text">Цена за {cartItemsCount} {word}: <strong>{totalPrice} ₽</strong></p>
     }
 
@@ -37,10 +40,6 @@ function Cart(props) {
             return true;
         }
     }
-
-    const priceText = (
-        <div>{isCartEmpty() ? cartEmptyMessage : totalPriceMessage()}</div>
-    )
 
     function handleDecreaseQuantity(id) {
         const updatedItems = items.map(item => {
@@ -113,9 +112,9 @@ function Cart(props) {
                     <h2 className="cart-section__title">Итого</h2>
                 </div>
                 <div className="cart-section__total">
-                    {priceText}
+                    {totalPriceMessage()}
 
-                    <button className={"cart-section__checkout-btn" + (isCartEmpty() ? " hidden" : "")}>
+                    <button className={"cart-section__checkout-btn"}>
                     К оформлению заказа
                     <span className="material-symbols-outlined arrow-icon">
                         navigate_next
