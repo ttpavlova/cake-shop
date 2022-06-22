@@ -1,6 +1,7 @@
 .footer {
     flex-shrink: 0;
     width: 100%;
+    height: 170px;
     color: #d5d5d5;
     background-color: #3d3d3d;
     
@@ -9,6 +10,7 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        height: 100%;
         max-width: 1280px;
         margin: 0 auto;
         padding: 20px;
@@ -77,6 +79,7 @@ svg:hover {
     .footer {
         &__container {
             flex-direction: column;
+            justify-content: normal;
         }
 
         &__copyright-part {

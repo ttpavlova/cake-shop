@@ -1,5 +1,5 @@
 .contacts {
   display: flex;
   flex-grow: 1;
-  min-height: calc(100vh - 60px - 70px);
+  min-height: calc(100vh - 60px - 170px);
 }/*# sourceMappingURL=Contacts.css.map */

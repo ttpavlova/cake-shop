@@ -17,7 +17,7 @@ function Home(props) {
     const items = props.items;
     
     return (
-        <div className="app-wrapper">
+        <div className="home">
 
             <Promo />
 

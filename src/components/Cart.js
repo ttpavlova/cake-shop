@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Cart.css";
+import { HashLink } from 'react-router-hash-link';
 import ProductCard from "./ProductCard";
 
 function Cart(props) {
@@ -87,38 +88,46 @@ function Cart(props) {
         />
     ));
 
-    return (
-        <div className="app-wrapper">
-
-            <section className="cart-section">
-                <div className="cart-section__container">
-                    <div className="cart-section__left">
-                        <div className="cart-section__header">
-                            <h2 className="cart-section__title">Корзина</h2>
-                            <button className="cart-section__clear-btn" onClick={clearCart}>Очистить всё</button>
-                        </div>
-                        <div className="cart-section__content">
-                            {itemList}
-                        </div>
-                    </div>
-                    <div className="cart-section__right">
-                        <div className="cart-section__header">
-                            <h2 className="cart-section__title">Итого</h2>
-                        </div>
-                        <div className="cart-section__total">
-                            {priceText}
-
-                            <button className={"cart-section__checkout-btn" + (isCartEmpty() ? " hidden" : "")}>
-                            К оформлению заказа
-                            <span className="material-symbols-outlined arrow-icon">
-                                navigate_next
-                            </span>
-                        </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    const emptyCartTemplate = (
+        <div className="cart-section__text-part">
+            <p className="cart-section__empty-cart-text">Сейчас Ваша корзина пуста</p>
+            <HashLink smooth to="/#promo-footer" className="button cart-section__back-to-catalog-btn">К каталогу</HashLink>
         </div>
+    );
+
+    const mainCartTemplate = (
+        <div className="cart-section__container">
+            <div className="cart-section__left">
+                <div className="cart-section__header">
+                    <h2 className="cart-section__title">Корзина</h2>
+                    <button className="cart-section__clear-btn" onClick={clearCart}>Очистить всё</button>
+                </div>
+                <div className="cart-section__content">
+                    {itemList}
+                </div>
+            </div>
+            <div className="cart-section__right">
+                <div className="cart-section__header">
+                    <h2 className="cart-section__title">Итого</h2>
+                </div>
+                <div className="cart-section__total">
+                    {priceText}
+
+                    <button className={"cart-section__checkout-btn" + (isCartEmpty() ? " hidden" : "")}>
+                    К оформлению заказа
+                    <span className="material-symbols-outlined arrow-icon">
+                        navigate_next
+                    </span>
+                </button>
+                </div>
+            </div>
+        </div>
+    );
+
+    return (
+            <section className={"cart-section" + (isCartEmpty() ? " empty-cart-view" : " main-cart-view")}>
+                {isCartEmpty() ? emptyCartTemplate : mainCartTemplate}
+            </section>
     );
 }
 
