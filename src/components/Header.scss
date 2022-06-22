@@ -39,6 +39,10 @@
         text-decoration: none;
         transition: color 0.2s ease;
 
+        &.cart__icon {
+            height: 24px;
+        }
+
         &:hover {
             color: Variables.$accent_opacity_08;
         }
@@ -136,10 +140,6 @@
 
         &__link {
             transition: none;
-
-            &.cart__icon {
-                height: 24px;
-            }
         }
 
         &.active {
@@ -164,6 +164,10 @@
             margin: 0;
             padding-top: 15px;
         }
+    }
+
+    .cart-icon {
+        font-weight: 600;
     }
 
     .burger-menu-btn {

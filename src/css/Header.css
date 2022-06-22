@@ -34,6 +34,9 @@
   text-decoration: none;
   transition: color 0.2s ease;
 }
+.nav__link.cart__icon {
+  height: 24px;
+}
 .nav__link:hover {
   color: rgba(170, 25, 69, 0.8);
 }
@@ -122,9 +125,6 @@
   .nav__link {
     transition: none;
   }
-  .nav__link.cart__icon {
-    height: 24px;
-  }
   .nav.active {
     display: flex;
     flex-direction: column;
@@ -143,6 +143,10 @@
   .cart.mobile {
     margin: 0;
     padding-top: 15px;
+  }
+
+  .cart-icon {
+    font-weight: 600;
   }
 
   .burger-menu-btn {
