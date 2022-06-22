@@ -9,7 +9,7 @@ function Footer() {
                     <span className="footer__title">© 2022 Cake Shop</span>
                     <a className="footer__contacts-link" href="mailto:">feedback@cakeshop.com</a>
                     <span className="footer__favicon-link">
-                        <a target="_blank" href="https://icons8.com/icon/68n8FtrxyoFt/strawberry-cake">Иконка</a> сайта от <a target="_blank" href="https://icons8.com">Icons8</a>
+                        <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/68n8FtrxyoFt/strawberry-cake">Иконка</a> сайта от <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
                     </span>
                 </div>
                 
