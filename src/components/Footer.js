@@ -6,8 +6,11 @@ function Footer() {
         <footer className="footer">
             <div className="footer__container">
                 <div className="footer__copyright-part">
-                    <span className="footer__title">Cake shop © 2022</span>
-                    <a className="footer__contacts-link" href="mailto:">feedback@myemail.com</a>
+                    <span className="footer__title">© 2022 Cake Shop</span>
+                    <a className="footer__contacts-link" href="mailto:">feedback@cakeshop.com</a>
+                    <span className="footer__favicon-link">
+                        <a target="_blank" href="https://icons8.com/icon/68n8FtrxyoFt/strawberry-cake">Иконка</a> сайта от <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </span>
                 </div>
                 
                 <div className="footer__social-links">

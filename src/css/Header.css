@@ -19,6 +19,15 @@
   padding: 15px 20px;
 }
 
+.logo > .nav__link {
+  font-family: "Lobster", cursive;
+  font-size: 22px;
+  font-weight: 400;
+}
+.logo > .nav__link:hover {
+  color: #000;
+}
+
 .nav__item {
   display: inline-block;
   margin-right: 20px;
@@ -85,12 +94,6 @@
     overflow: auto;
   }
 
-  .header.mobile .nav__link {
-    font-size: 20px;
-    font-weight: 600;
-    color: #4d4d4d;
-  }
-
   .header__container.mobile {
     flex-direction: column;
     align-items: inherit;
@@ -103,6 +106,9 @@
 
   .logo.mobile {
     padding-bottom: 15px;
+  }
+  .logo.mobile > .nav__link {
+    color: #4d4d4d;
   }
 
   .nav {
@@ -125,9 +131,15 @@
   .nav__link {
     transition: none;
   }
-  .nav.active {
+  .nav.mobile {
     display: flex;
     flex-direction: column;
+  }
+
+  .nav.mobile > .nav__item > .nav__link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4d4d4d;
   }
 
   .cart {

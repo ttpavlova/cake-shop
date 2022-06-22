@@ -20,7 +20,7 @@ function Header(props) {
                 <div className={"logo" + (isMenuOpened ? " mobile" : "")}>
                     <a className="nav__link" href="/">Cake Shop</a>
                 </div>
-                <ul className={"nav" + (isMenuOpened ? " active" : "")}>
+                <ul className={"nav" + (isMenuOpened ? " mobile" : "")}>
                     <li className="nav__item" onClick={() => {setMenuOpened(false)}}>
                         <HashLink className="nav__link" smooth to="/#cakes">Торты</HashLink>
                     </li>
