@@ -66,10 +66,6 @@
             visibility: hidden;
         }
     }
-
-    &__icon {
-        display: flex;
-    }
 }
 
 .cart-icon {
@@ -142,7 +138,6 @@
             transition: none;
 
             &.cart__icon {
-                width: 24px;
                 height: 24px;
             }
         }
