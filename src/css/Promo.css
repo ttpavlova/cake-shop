@@ -48,21 +48,14 @@
   color: #4b4b4b;
 }
 .promo__btn {
-  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
   border: 1px solid #4b4b4b;
   border-radius: 30px;
-  cursor: pointer;
 }
-.promo__link {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  font-size: 18px;
-  font-weight: 600;
-  color: #4b4b4b;
-  text-decoration: none;
-}
-.promo__link > .arrow {
+.promo__btn > .arrow {
   margin-left: 10px;
 }
 .promo__footer {
@@ -113,10 +106,8 @@
     color: #fff;
   }
   .promo__btn {
-    border: 2px solid #fff;
-  }
-  .promo__link {
     font-size: 20px;
     color: #fff;
+    border: 2px solid #fff;
   }
 }/*# sourceMappingURL=Promo.css.map */

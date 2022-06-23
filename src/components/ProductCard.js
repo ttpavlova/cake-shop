@@ -73,7 +73,7 @@ function ProductCard(props) {
                 <div className={"card__old-price normal-view" + (isSpecialItem(props.id) ? "" : " hidden")}>{props.price} ₽</div>
                 <div className="card__bottom-part">
                     <div className="card__price">{dessertOfTheDayPrice} ₽</div>
-                    <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
+                    <div className="btn card__submit" onClick={() => props.onClick()}>В корзину</div>
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@ function ProductCard(props) {
                         <div className="card__old-price special-view">{props.price} ₽</div>
                         <div className="card__new-price">{dessertOfTheDayPrice} ₽</div>
                     </div>
-                    <div className="button card__submit" onClick={() => props.onClick()}>В корзину</div>
+                    <div className="btn card__submit" onClick={() => props.onClick()}>В корзину</div>
                 </div>
             </div>
         </div>

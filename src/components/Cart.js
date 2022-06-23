@@ -92,7 +92,7 @@ function Cart(props) {
     const emptyCartTemplate = (
         <div className="cart-section__text-part">
             <p className="cart-section__empty-cart-text">Сейчас Ваша корзина пуста</p>
-            <HashLink smooth to="/#promo-footer" className="button cart-section__back-to-catalog-btn">К каталогу</HashLink>
+            <HashLink smooth to="/#promo-footer" className="btn cart-section__back-to-catalog-btn" role="button">К каталогу</HashLink>
         </div>
     );
 

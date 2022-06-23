@@ -14,14 +14,12 @@ function Promo() {
                     <div className="promo__text-wrapper">
                         <div className="promo__title">Торты и десерты на любой вкус</div>
                         <p className="promo__text">Попробуйте наши десерты. Закажите онлайн с доставкой или заберите заказ в любом магазине сети</p>
-                        <button className="button promo__btn">
-                            <HashLink smooth to="/#promo-footer" className="promo__link">
-                                Сделать заказ
-                                <span className="material-symbols-outlined arrow">
-                                    trending_flat
-                                </span>
-                            </HashLink>
-                        </button>
+                        <HashLink smooth to="/#promo-footer" className="btn promo__btn" role="button">
+                            Сделать заказ
+                            <span className="material-symbols-outlined arrow">
+                                trending_flat
+                            </span>
+                        </HashLink>
                     </div>
                 </div>
             </div>

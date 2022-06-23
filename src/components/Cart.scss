@@ -111,14 +111,9 @@
     }
 
     &__back-to-catalog-btn {
-        padding: 15px 25px;
-        font-size: 18px;
-        font-weight: 600;
-        color: #4b4b4b;
+        min-width: 180px;
         border: 1px solid #4b4b4b;
         border-radius: 30px;
-        text-decoration: none;
-        cursor: pointer;
     }
 }
 

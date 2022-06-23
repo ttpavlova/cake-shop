@@ -56,20 +56,12 @@
     }
 
     &__btn {
-        padding: 15px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
         border: 1px solid #4b4b4b;
         border-radius: 30px;
-        cursor: pointer;
-    }
-
-    &__link {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        font-size: 18px;
-        font-weight: 600;
-        color: #4b4b4b;
-        text-decoration: none;
 
         & > .arrow {
             margin-left: 10px;
@@ -133,12 +125,9 @@
         }
 
         &__btn {
-            border: 2px solid #fff;
-        }
-
-        &__link {
             font-size: 20px;
             color: #fff;
+            border: 2px solid #fff;
         }
     }
 }
