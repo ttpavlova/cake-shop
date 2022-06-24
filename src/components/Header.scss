@@ -51,6 +51,7 @@
 
         &.cart__icon {
             height: 24px;
+            width: 24px;
         }
 
         &:hover {
@@ -61,7 +62,9 @@
 
 .cart {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 70px;
 
     &__count {
         display: flex;
