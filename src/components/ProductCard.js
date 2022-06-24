@@ -102,7 +102,11 @@ function ProductCard(props) {
                         <div className="counter__plus" onClick={props.handleIncreaseQuantity}>+</div>
                     </div>
                 </div>
-                <div className="card__price">{countPrice(dessertOfTheDayPrice, props.quantity)} ₽</div>
+                <div className="card__prices cart-view">
+                    <div className="card__price">{countPrice(dessertOfTheDayPrice, props.quantity)} ₽</div>
+                    <p className="card__price-formula">{props.quantity} шт. x {props.price} ₽</p>
+                </div>
+                
                 <div className="button card__submit cart-view">В корзину</div>
             </div>
         </div>
@@ -121,7 +125,7 @@ function ProductCard(props) {
                 </div>
 
                 <div className="card__footer">
-                    <div className="card__prices">
+                    <div className="card__prices special-view">
                         <div className="card__old-price special-view">{props.price} ₽</div>
                         <div className="card__new-price">{dessertOfTheDayPrice} ₽</div>
                     </div>

@@ -32,7 +32,7 @@ function Cart(props) {
             word = "товаров";
         }
 
-        return <p className="total__text">Цена за {cartItemsCount} {word}: <strong>{totalPrice} ₽</strong></p>
+        return <p className="cart-section__total-text">Цена за {cartItemsCount} {word}: <strong>{totalPrice} ₽</strong></p>
     }
 
     function isCartEmpty() {

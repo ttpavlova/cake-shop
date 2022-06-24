@@ -67,11 +67,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 30px;
+        min-width: 35px;
         height: 30px;
         margin-right: 10px;
+        padding-right: 10px;
         font-size: 18px;
         font-weight: 500;
+        text-align: left;
         color: #fff;
         color: #4d4d4d;
         border-right: 2px solid Variables.$accent_opacity_08;

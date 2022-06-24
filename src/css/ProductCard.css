@@ -23,7 +23,6 @@
 .card__main.cart-view {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 .card__img-wrapper {
   display: inline-block;
@@ -33,10 +32,10 @@
   overflow: hidden;
 }
 .card__img-wrapper.cart-view {
-  width: 150px;
-  min-width: 150px;
-  height: 150px;
-  border-radius: 0;
+  width: 200px;
+  min-width: 200px;
+  height: 200px;
+  border-radius: 10px 0 0 10px;
 }
 .card__img-wrapper.special-view {
   height: 100%;
@@ -106,9 +105,21 @@
 .card__footer.cart-view {
   margin: 0;
   margin-left: auto;
+  padding: 20px;
+}
+.card__prices {
+  display: flex;
+}
+.card__prices.cart-view {
+  flex-direction: column;
+  width: 100px;
+  text-align: left;
+}
+.card__prices.special-view {
+  align-items: center;
+  font-weight: 600;
 }
 .card__price {
-  min-width: 50px;
   font-size: 18px;
   font-weight: 600;
 }
@@ -150,20 +161,17 @@
 .card.cart-view {
   flex-direction: row;
   justify-content: flex-start;
-  padding: 20px;
-  border: 1px solid #FBE5C8;
-  border-top: none;
-  border-radius: 0;
-  box-shadow: none;
-}
-.card.cart-view:last-child {
-  border-radius: 0 0 10px 10px;
+  margin-bottom: 20px;
 }
 .card__counter {
   display: flex;
   align-items: center;
-  margin-right: 10px;
-  padding: 15px;
+  margin-right: 25px;
+}
+.card__price-formula {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #b1b1b1;
 }
 .card.special-view {
   height: 100%;
@@ -175,11 +183,6 @@
   bottom: 0;
   width: 100%;
   color: #fff;
-}
-.card__prices {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
 }
 .card__new-price {
   font-size: 24px;
@@ -207,10 +210,10 @@
 
 .delete-icon {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 24px;
-  height: 24px;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
   font-size: 20px;
   color: #b1b1b1;
   transition: color 0.3s ease;
@@ -226,16 +229,18 @@
 
 @media screen and (max-width: 992px) {
   .card.cart-view {
-    border-left: none;
-    border-right: none;
+    border-radius: 0;
   }
-  .card.cart-view:last-child {
+  .card__img-wrapper.cart-view {
     border-radius: 0;
   }
 }
 @media screen and (max-width: 768px) {
   .card__container.cart-view {
     flex-direction: column;
+  }
+  .card__counter {
+    margin-right: 0;
   }
   .card__footer.cart-view {
     display: flex;
@@ -247,6 +252,11 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .card__img-wrapper.cart-view {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+  }
   .card__prices {
     flex-direction: column;
   }

@@ -15,8 +15,8 @@ const CAKES_DATA = [
   {id: "cake4", name: "Торт с ежевикой", description: "Ванильный бисквит, сливочный крем, молочная глазурь, ягоды ежевики", price: 270, type: "berry", quantity: 0, img: "berry-cake.jpg"},
   {id: "cake5", name: "Торт «Красный Бархат»", description: "Шоколадный бисквит, крем на основе сливочного сыра", price: 270, type: "chocolate", quantity: 0, img: "red-velvet-cake.jpg"},
   {id: "cake6", name: "Сметанный торт с ягодным ассорти", description: "Ванильный бисквит, сметанный крем, ягоды черники, малины и клубники", price: 270, type: "sour-cream", quantity: 0, img: "sour-cream-cake-strawberries.jpg"},
-  {id: "cake7", name: "Клубничный торт", description: "Песочная основа, белый бисквит, компоте из ягод, свежие ягоды клубники", price: 270, type: "berry", quantity: 0, img: "strawberry-cake.jpg"},
-  {id: "cake8", name: "Апельсиновый торт", description: "Белый бисквит, фруктовое желе, абрикосовое суфле, дольки апельсина", price: 250, type: "fruit", quantity: 0, img: "orange-cake.jpg"},
+  {id: "cake7", name: "Клубничный торт", description: "Песочная основа, суфле, компоте из ягод, свежие ягоды клубники", price: 270, type: "berry", quantity: 0, img: "strawberry-cake.jpg"},
+  {id: "cake8", name: "Апельсиновый торт", description: "Абрикосовое суфле, фруктовое желе, дольки апельсина", price: 250, type: "fruit", quantity: 0, img: "orange-cake.jpg"},
 ]
 
 const PASTRY_DATA = [

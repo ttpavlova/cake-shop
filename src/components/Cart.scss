@@ -5,7 +5,7 @@
     flex: 1;
     min-height: calc(100vh - #{Variables.$header} - #{Variables.$footer});
     width: 100%;
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     background-color: rgba(255, 255, 255, 0.8);
 
     // main styles
@@ -28,8 +28,7 @@
     &__right {
         grid-area: sd;
         position: sticky;
-        top: 90px;
-        background-color: rgba(255, 255, 255, 0.8);
+        top: 80px;
     }
 
     &__header {
@@ -38,7 +37,6 @@
         align-items: center;
         padding: 20px;
         border-radius: 10px 10px 0 0;
-        background-color: Variables.$secondary;
     }
 
     &__title {
@@ -48,28 +46,28 @@
     }
 
     &__clear-btn {
+        padding-bottom: 2px;
+        font-size: 16px;
+        color: #b1b1b1;
+        border-bottom: 1px solid #b1b1b1;
+        transition: .1s linear;
         cursor: pointer;
     }
 
-    &__clear-btn::after {
-        content: "";
-        width: 100%;
-        height: 1px;
-        display: block;
-        background-color: #4d4d4d;
-        opacity: 0;
-        transition: opacity .1s linear;
-        
-    }
-
-    &__clear-btn:hover::after {
-        opacity: 1;
+    &__clear-btn:hover {
+        color: #4b4b4b;
+        border-bottom: 1px solid #4b4b4b;
     }
 
     &__total {
         padding: 20px;
-        border: 1px solid Variables.$secondary;
-        border-radius: 0 0 10px 10px;
+        border-radius: 10px;
+        box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    &__total-text {
+        margin-bottom: 20px;
+        font-size: 18px;
     }
 
     &__checkout-btn {
@@ -154,8 +152,6 @@
         }
 
         &__total {
-            border-left: none;
-            border-right: none;
             border-radius: 0;
         }
     }
