@@ -36,6 +36,10 @@
 .about__link {
   display: flex;
   align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
   font-weight: 500;
   color: rgba(170, 25, 69, 0.8);
   transition: 0.3s linear;
