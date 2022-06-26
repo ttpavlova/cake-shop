@@ -3,7 +3,7 @@
   flex-grow: 1;
   min-height: calc(100vh - 60px - 170px);
   width: 100%;
-  padding: 60px 40px 70px 40px;
+  padding: 20px 40px 40px 40px;
   background-color: #fff3ec;
 }
 .about__container {
