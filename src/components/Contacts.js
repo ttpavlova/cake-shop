@@ -20,18 +20,22 @@ function Contacts() {
                             <p className="item__title">Адрес</p>
                             <p className="item__property address">Санкт-Петербург, ул. Садовая, 29Д</p>
                             <p className="item__title">Режим работы</p>
-                            <p className="item__property">Пн - Вс: 10:00 - 22:00</p>
+                            <p className="item__property">Пн - Пт: 10:00 - 22:00</p>
+                            <p className="item__property">Сб - Вс: 10:00 - 21:00</p>
                             <p className="item__title">Доставка и самовывоз</p>
-                            <p className="item__property">Пн - Вс: 10:00 - 22:00</p>
+                            <p className="item__property">Пн - Пт: 10:00 - 22:00</p>
+                            <p className="item__property">Сб - Вс: 10:00 - 21:00</p>
                         </div>
 
                         <div className="contacts__item">
                             <p className="item__title">Адрес</p>
-                            <p className="item__property address">Санкт-Петербург, Суворовский пр., 2В</p>
+                            <p className="item__property address">Санкт-Петербург, Суворовский пр., 2Г</p>
                             <p className="item__title">Режим работы</p>
-                            <p className="item__property">Пн - Вс: 09:00 - 23:00</p>
+                            <p className="item__property">Пн - Пт: 09:00 - 21:00</p>
+                            <p className="item__property">Сб - Вс: 10:00 - 21:00</p>
                             <p className="item__title">Доставка и самовывоз</p>
-                            <p className="item__property">Пн - Вс: 11:00 - 21:00</p>
+                            <p className="item__property">Пн - Пт: 09:00 - 21:00</p>
+                            <p className="item__property">Сб - Вс: 10:00 - 21:00</p>
                         </div>
                     </div>
                 </div>
