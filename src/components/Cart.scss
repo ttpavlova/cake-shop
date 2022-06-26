@@ -6,7 +6,7 @@
     min-height: calc(100vh - #{Variables.$header} - #{Variables.$footer});
     width: 100%;
     padding: 20px 40px 60px 40px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: Variables.$secondary_opacity_03;
 
     // main styles
 

@@ -1,7 +1,7 @@
 .ice-cream {
   width: 100%;
   padding: 60px 40px 70px 40px;
-  background-color: #FBE5C8;
+  background-color: rgba(251, 229, 200, 0.3);
 }
 .ice-cream__container {
   width: 100%;
