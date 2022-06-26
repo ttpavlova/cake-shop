@@ -7,7 +7,7 @@ function Contacts() {
             <div className="contacts__container">
                 <h2 className="contacts__title">Контакты</h2>             
                 <div className="contacts__content">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c194d08624b8718ba84d59267979526dafc74dc056a8b3b9e18c4c3acd5d9ce&amp;source=constructor" width="600" height="450" frameborder="0"></iframe>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c194d08624b8718ba84d59267979526dafc74dc056a8b3b9e18c4c3acd5d9ce&amp;source=constructor" width="600" height="450" title="Map" frameborder="0"></iframe>
                     <div className="contacts__list">
                         <div className="contacts__phone-part">
                             <div className="contacts__phone">
