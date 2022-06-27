@@ -45,9 +45,23 @@ const ALL_DATA = CAKES_DATA.concat(PASTRY_DATA, ICECREAM_DATA, DRINKS_DATA);
 
 function App() {
   const [isMenuOpened, setMenuOpened] = useState(false);
-  const [items, setItems] = useState(ALL_DATA);
+  const [items, setItems] = useState(getArrayToLoadDataFrom());
   const [cartItemsCount, setCartItemsCount] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
+
+  // if there is any data in local storage, we load it from it, otherwise the original data is loaded
+  function getArrayToLoadDataFrom() {
+    const localData = localStorage.getItem("items");
+    if (localData) {
+      return JSON.parse(localData);
+    }
+    return ALL_DATA;
+  }
+
+  // update local storage every time the data is changed
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
 
   function addToCart(id) {
     const updatedItems = items.map(item => {
