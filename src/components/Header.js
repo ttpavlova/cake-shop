@@ -18,7 +18,9 @@ function Header(props) {
         <header className={"header" + (isMenuOpened ? " mobile" : "")}>
             <div className={"header__container" + (isMenuOpened ? " mobile" : "")}>
                 <div className={"logo" + (isMenuOpened ? " mobile" : "")}>
-                    <a className="nav__link" href="/">Cake Shop</a>
+                    <a className="nav__link" href="/">
+                        Cake <span className="logo__color-part">Shop</span>
+                    </a>
                 </div>
                 <ul className={"nav" + (isMenuOpened ? " mobile" : "")}>
                     <li className="nav__item" onClick={() => {setMenuOpened(false)}}>

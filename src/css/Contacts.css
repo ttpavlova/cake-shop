@@ -4,7 +4,7 @@
   min-height: calc(100vh - 60px - 170px);
   width: 100%;
   padding: 40px 40px 60px 40px;
-  background-color: rgba(251, 229, 200, 0.3);
+  background-color: #fff;
 }
 .contacts__container {
   width: 100%;
@@ -33,9 +33,7 @@
   align-items: center;
   margin: 0 0 20px 0;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.1);
+  background-color: rgba(251, 229, 200, 0.3);
 }
 .contacts__phone {
   display: flex;
@@ -53,9 +51,7 @@
 .contacts__item {
   margin: 0 0 20px 0;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+  background-color: rgba(251, 229, 200, 0.3);
 }
 .contacts__item:last-child {
   margin: 0;
@@ -80,5 +76,5 @@
   color: #4b4b4b;
 }
 .item__property.link:hover {
-  color: #AA1945;
+  color: #E95468;
 }/*# sourceMappingURL=Contacts.css.map */

@@ -6,7 +6,7 @@
     min-height: calc(100vh - #{Variables.$header} - #{Variables.$footer});
     width: 100%;
     padding: 40px 40px 60px 40px;
-    background-color: Variables.$secondary_opacity_03;
+    background-color: #fff;
 
     &__container {
         width: 100%;
@@ -39,9 +39,7 @@
         align-items: center;
         margin: 0 0 20px 0;
         padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.1);
+        background-color: Variables.$secondary_opacity_03;
     }
 
     &__phone {
@@ -66,9 +64,7 @@
     &__item {
         margin: 0 0 20px 0;
         padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+        background-color: Variables.$secondary_opacity_03;
 
         &:last-child {
             margin: 0;

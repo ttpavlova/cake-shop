@@ -21,6 +21,10 @@
     }
 }
 
+.logo__color-part {
+    color: Variables.$accent;
+}
+
 .logo > .nav__link {
     font-family: 'Lobster', cursive;
     font-size: 22px;
@@ -55,7 +59,7 @@
         }
 
         &:hover {
-            color: Variables.$accent_opacity_08;
+            color: Variables.$accent;
         }
     }
 }
@@ -79,7 +83,7 @@
         text-align: left;
         color: #fff;
         color: #4d4d4d;
-        border-right: 2px solid Variables.$accent_opacity_08;
+        border-right: 3px solid Variables.$accent;
 
         &.hidden {
             visibility: hidden;
@@ -91,7 +95,7 @@
     color: #4d4d4d;
 
     &:hover {
-        color: Variables.$accent_opacity_08;
+        color: Variables.$accent;
     }
 }
 

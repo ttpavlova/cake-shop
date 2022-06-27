@@ -52,11 +52,20 @@
   justify-content: center;
   align-items: center;
   width: 250px;
-  border: 1px solid #4b4b4b;
+  background-color: #E95468;
   border-radius: 30px;
+  color: #fff;
+  transition: background-color 0.3s linear;
 }
-.promo__btn > .arrow {
-  margin-left: 10px;
+.promo__btn:hover {
+  background-color: #DC4257;
+}
+.promo__btn:hover .promo__arrow {
+  transform: translate3d(5px, 0, 0);
+}
+.promo__arrow {
+  margin-left: 5px;
+  transition: 0.3s ease-in-out;
 }
 .promo__footer {
   position: absolute;
@@ -107,7 +116,5 @@
   }
   .promo__btn {
     font-size: 20px;
-    color: #fff;
-    border: 2px solid #fff;
   }
 }/*# sourceMappingURL=Promo.css.map */

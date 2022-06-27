@@ -16,7 +16,7 @@ function Promo() {
                         <p className="promo__text">Попробуйте наши десерты. Закажите онлайн с доставкой или заберите заказ в любом магазине сети</p>
                         <HashLink smooth to="/#promo-footer" className="btn promo__btn" role="button">
                             Сделать заказ
-                            <span className="material-symbols-outlined arrow">
+                            <span className="material-symbols-outlined promo__arrow">
                                 trending_flat
                             </span>
                         </HashLink>

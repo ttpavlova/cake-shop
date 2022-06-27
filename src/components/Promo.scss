@@ -60,12 +60,23 @@
         justify-content: center;
         align-items: center;
         width: 250px;
-        border: 1px solid #4b4b4b;
+        background-color: Variables.$accent;
         border-radius: 30px;
+        color: #fff;
+        transition: background-color 0.3s linear;
 
-        & > .arrow {
-            margin-left: 10px;
+        &:hover {
+            background-color: Variables.$accent_darker;
         }
+
+        &:hover .promo__arrow {
+            transform: translate3d(5px, 0, 0);
+        }
+    }
+
+    &__arrow {
+        margin-left: 5px;
+        transition: 0.3s ease-in-out;
     }
 
     &__footer {
@@ -126,8 +137,6 @@
 
         &__btn {
             font-size: 20px;
-            color: #fff;
-            border: 2px solid #fff;
         }
     }
 }

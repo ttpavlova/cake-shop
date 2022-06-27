@@ -151,10 +151,14 @@
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-  background-color: #AA1945;
+  background-color: #E95468;
   border-radius: 30px;
   box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.1s linear;
   cursor: pointer;
+}
+.card__submit:hover {
+  background-color: #DC4257;
 }
 .card__submit.cart-view {
   display: none;
@@ -279,5 +283,8 @@
   }
   .card__prices {
     flex-direction: column;
+  }
+  .card__prices.special-view {
+    align-items: flex-start;
   }
 }/*# sourceMappingURL=ProductCard.css.map */

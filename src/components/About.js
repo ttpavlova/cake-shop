@@ -20,7 +20,7 @@ function About() {
                             </span>
                         </a>
                     </div>
-                    <div className="about__img-wrapper">
+                    <div className="about__img-wrapper img1">
                         <img src={tartsImg1} className="about__img img1" alt="tarts"></img>
                     </div>
                     <div className="about__img-wrapper img2">
