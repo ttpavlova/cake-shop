@@ -25,14 +25,14 @@ function Contacts() {
 
                         <div className="contacts__item">
                             <p className="item__title">Адрес</p>
-                            <p className="item__property address">Санкт-Петербург, ул. Каменная, 29Д</p>
+                            <p className="item__property address">Санкт-Петербург, ул.&nbsp;Каменная, 29Д</p>
                             <p className="item__title">Режим работы</p>
                             <p className="item__property">Пн - Вс: 10:00 - 22:00</p>
                         </div>
 
                         <div className="contacts__item">
                             <p className="item__title">Адрес</p>
-                            <p className="item__property address">Санкт-Петербург, Каштановый б-р, 2В</p>
+                            <p className="item__property address">Санкт-Петербург, Каштановый&nbsp;б&#8209;р, 2В</p>
                             <p className="item__title">Режим работы</p>
                             <p className="item__property">Пн - Вс: 09:00 - 21:00</p>
                         </div>
