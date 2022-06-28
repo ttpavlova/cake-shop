@@ -114,9 +114,9 @@ function Cart(props) {
                 <div className="cart-section__total">
                     {totalPriceMessage()}
 
-                    <button className={"cart-section__checkout-btn"}>
+                    <button className={" btn cart-section__checkout-btn"}>
                     К оформлению заказа
-                    <span className="material-symbols-outlined arrow-icon">
+                    <span className="material-symbols-outlined cart-section__arrow">
                         navigate_next
                     </span>
                 </button>

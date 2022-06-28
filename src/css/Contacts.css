@@ -33,7 +33,7 @@
   align-items: center;
   margin: 0 0 20px 0;
   padding: 20px;
-  background-color: rgba(251, 229, 200, 0.3);
+  background-color: rgba(251, 229, 200, 0.5);
 }
 .contacts__phone {
   display: flex;
@@ -51,7 +51,7 @@
 .contacts__item {
   margin: 0 0 20px 0;
   padding: 20px;
-  background-color: rgba(251, 229, 200, 0.3);
+  background-color: rgba(251, 229, 200, 0.5);
 }
 .contacts__item:last-child {
   margin: 0;

@@ -4,7 +4,7 @@
   min-height: calc(100vh - 60px - 170px);
   width: 100%;
   padding: 20px 40px 60px 40px;
-  background-color: rgba(251, 229, 200, 0.3);
+  background-color: #fff;
 }
 .cart-section__container {
   display: grid;
@@ -51,9 +51,8 @@
 }
 .cart-section__total {
   padding: 20px;
-  background-color: #fff;
+  background-color: rgba(251, 229, 200, 0.5);
   border-radius: 10px;
-  box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.1);
 }
 .cart-section__total-text {
   margin-bottom: 20px;
@@ -61,21 +60,23 @@
 }
 .cart-section__checkout-btn {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 10px 25px;
+  width: 320px;
   font-size: 18px;
   color: #fff;
-  background-color: rgba(170, 25, 69, 0.8);
+  background-color: #E95468;
   border-radius: 30px;
   transition: background-color 0.1s linear;
   cursor: pointer;
 }
-.cart-section__checkout-btn:hover {
-  background-color: #9f1c43;
+.cart-section__checkout-btn:active {
+  background-color: rgba(233, 84, 104, 0.9);
 }
-.cart-section__checkout-btn:hover .arrow-icon {
-  margin-left: 10px;
+.cart-section__arrow {
+  margin-left: 5px;
+  transition: 0.3s ease-in-out;
 }
 .cart-section.empty-cart-view {
   justify-content: center;
@@ -91,18 +92,18 @@
 }
 .cart-section__back-to-catalog-btn {
   min-width: 180px;
-  border: 1px solid #4b4b4b;
+  color: #fff;
+  background-color: #E95468;
   border-radius: 30px;
+  transition: background-color 0.1s linear;
+}
+.cart-section__back-to-catalog-btn:active {
+  background-color: rgba(233, 84, 104, 0.9);
 }
 
 .total__text {
   min-width: 200px;
   margin: 0 0 20px 0;
-}
-
-.arrow-icon {
-  margin-left: 5px;
-  transition: margin-left 0.3s ease;
 }
 
 @media screen and (max-width: 992px) {
@@ -127,5 +128,28 @@
   }
   .cart-section__total {
     border-radius: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cart-section__checkout-btn {
+    width: 280px;
+  }
+}
+@media (hover: hover) {
+  .cart-section__checkout-btn:hover {
+    background-color: #DC4257;
+  }
+  .cart-section__checkout-btn:active {
+    background-color: rgba(233, 84, 104, 0.9);
+  }
+  .cart-section__checkout-btn:hover .cart-section__arrow {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  .cart-section__back-to-catalog-btn:hover {
+    background-color: #DC4257;
+  }
+  .cart-section__back-to-catalog-btn:active {
+    background-color: rgba(233, 84, 104, 0.9);
   }
 }/*# sourceMappingURL=Cart.css.map */
