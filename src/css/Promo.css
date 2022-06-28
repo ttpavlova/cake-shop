@@ -39,13 +39,11 @@
   font-size: 56px;
   font-weight: 500;
   line-height: 1.2;
-  color: #1b1b1b;
 }
 .promo__text {
   margin: 20px 0 50px 0;
   text-align: left;
   font-size: 18px;
-  color: #4b4b4b;
 }
 .promo__btn {
   display: flex;
