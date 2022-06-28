@@ -7,6 +7,7 @@ import About from './components/About';
 import Contacts from './components/Contacts';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 const CAKES_DATA = [
   {id: "cake1", name: "Сметанный торт с ягодами", description: "Ванильный бисквит, сметанный крем, ягоды черники и ежевики", price: 200, type: "sour-cream", quantity: 0, img: "sour-cream-cake.jpg"},
@@ -167,6 +168,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header
         cartItemsCount={cartItemsCount}
         isMenuOpened={isMenuOpened}
