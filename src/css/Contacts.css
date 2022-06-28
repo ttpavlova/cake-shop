@@ -18,8 +18,15 @@
 }
 .contacts__content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr) minmax(200px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(580px, 1fr));
+  grid-gap: 60px;
+}
+.contacts__map {
+  width: 100%;
+}
+.contacts__map-iframe {
+  width: 100%;
+  height: 100%;
 }
 .contacts__list {
   display: flex;
@@ -76,4 +83,32 @@
 }
 .item__property.link:hover {
   color: #E95468;
+}
+
+@media screen and (max-width: 1300px) {
+  .contacts__content {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .contacts__map {
+    height: 300px;
+  }
+  .contacts__list {
+    grid-row: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts__phone-part {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contacts__phone {
+    margin: 0 0 15px 0;
+  }
+  .contacts__phone, .contacts__email {
+    flex-direction: column;
+  }
+  .contacts__phone > .item__title, .contacts__email > .item__title {
+    margin: 0 0 5px 0;
+  }
 }/*# sourceMappingURL=Contacts.css.map */

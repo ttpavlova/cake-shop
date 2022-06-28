@@ -13,7 +13,7 @@ function Promo() {
                 <div className="promo__container">
                     <div className="promo__text-wrapper">
                         <h1 className="promo__title">Торты и десерты на любой вкус</h1>
-                        <p className="promo__text">Наши десерты никого не оставят равнодушными. Закажите онлайн с доставкой или заберите заказ в любом магазине сети</p>
+                        <p className="promo__text">Наши десерты никого не оставят равнодушным. Закажите онлайн с доставкой или заберите заказ в любой кондитерской сети</p>
                         <HashLink smooth to="/#promo-footer" className="btn promo__btn" role="button">
                             Сделать заказ
                             <span className="material-symbols-outlined promo__arrow">
