@@ -81,9 +81,11 @@ function ProductCard(props) {
 
     const cartTemplate = (
         <div className="card__container cart-view">
-            <span className="material-symbols-outlined delete-icon" onClick={props.deleteFromCart}>
-                close
-            </span>
+            <button className="card__delete-btn">
+                <span className="material-symbols-outlined delete-icon" onClick={props.deleteFromCart}>
+                    close
+                </span>
+            </button>
             <div className="card__main cart-view">
                 <div className="card__img-wrapper cart-view">
                     <img className="card__img cart-view" src={images[props.img]} alt="product" />
@@ -97,9 +99,9 @@ function ProductCard(props) {
             <div className="card__footer cart-view">
                 <div className="card__counter">
                     <div className="counter__container">
-                        <div className="counter__minus" onClick={props.handleDecreaseQuantity}>-</div>
+                        <button className="counter__minus" onClick={props.handleDecreaseQuantity}>-</button>
                         <div className="counter__number">{props.quantity}</div>
-                        <div className="counter__plus" onClick={props.handleIncreaseQuantity}>+</div>
+                        <button className="counter__plus" onClick={props.handleIncreaseQuantity}>+</button>
                     </div>
                 </div>
                 <div className="card__prices cart-view">

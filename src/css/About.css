@@ -52,13 +52,6 @@
   width: 100%;
   background-color: #E95468;
 }
-.about__link:hover .arrow {
-  color: #DC4257;
-  transform: translate3d(5px, 0, 0);
-}
-.about__link:hover .about__link-text {
-  color: #DC4257;
-}
 .about__img-wrapper {
   position: relative;
   width: 500px;
@@ -106,5 +99,14 @@
   .about__img.img1 {
     -o-object-position: center 55%;
        object-position: center 55%;
+  }
+}
+@media (hover: hover) {
+  .about__link:hover .arrow {
+    color: #DC4257;
+    transform: translate3d(5px, 0, 0);
+  }
+  .about__link:hover .about__link-text {
+    color: #DC4257;
   }
 }/*# sourceMappingURL=About.css.map */

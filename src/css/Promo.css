@@ -57,11 +57,8 @@
   color: #fff;
   transition: background-color 0.3s linear;
 }
-.promo__btn:hover {
-  background-color: #DC4257;
-}
-.promo__btn:hover .promo__arrow {
-  transform: translate3d(5px, 0, 0);
+.promo__btn:active {
+  background-color: rgba(233, 84, 104, 0.9);
 }
 .promo__arrow {
   margin-left: 5px;
@@ -116,5 +113,16 @@
   }
   .promo__btn {
     font-size: 20px;
+  }
+}
+@media (hover: hover) {
+  .promo__btn:hover {
+    background-color: #DC4257;
+  }
+  .promo__btn:active {
+    background-color: rgba(233, 84, 104, 0.9);
+  }
+  .promo__btn:hover .promo__arrow {
+    transform: translate3d(5px, 0, 0);
   }
 }/*# sourceMappingURL=Promo.css.map */

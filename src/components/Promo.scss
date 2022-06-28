@@ -65,12 +65,8 @@
         color: #fff;
         transition: background-color 0.3s linear;
 
-        &:hover {
-            background-color: Variables.$accent_darker;
-        }
-
-        &:hover .promo__arrow {
-            transform: translate3d(5px, 0, 0);
+        &:active {
+            background-color: Variables.$accent_opacity_09;
         }
     }
 
@@ -138,5 +134,21 @@
         &__btn {
             font-size: 20px;
         }
+    }
+}
+
+@media (hover: hover) {
+    .promo__btn {
+        &:hover {
+            background-color: Variables.$accent_darker;
+        }
+
+        &:active {
+            background-color: Variables.$accent_opacity_09;
+        }
+
+        &:hover .promo__arrow {
+            transform: translate3d(5px, 0, 0);
+        } 
     }
 }
