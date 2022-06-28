@@ -57,7 +57,7 @@
 
 .cart {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 70px;
 }
@@ -159,8 +159,13 @@
     display: none;
   }
   .cart.mobile {
+    justify-content: flex-start;
     margin: 0;
     padding-top: 15px;
+    width: 100%;
+  }
+  .cart.mobile > .nav__link.cart__icon {
+    width: 100%;
   }
 
   .cart-icon {
