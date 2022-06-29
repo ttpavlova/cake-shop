@@ -86,30 +86,31 @@ function ProductCard(props) {
                     close
                 </span>
             </button>
+            <div className="card__img-wrapper cart-view">
+                <img className="card__img cart-view" src={images[props.img]} alt="product" />
+            </div>
+
             <div className="card__main cart-view">
-                <div className="card__img-wrapper cart-view">
-                    <img className="card__img cart-view" src={images[props.img]} alt="product" />
-                </div>
                 <div className="card__text cart-view">
                     <div className="card__title">{props.name}</div>
                     <div className="card__description cart-view">{props.description}</div>
                 </div>
-            </div>
-            
-            <div className="card__footer cart-view">
-                <div className="card__counter">
-                    <div className="counter__container">
-                        <button className="counter__minus" onClick={props.handleDecreaseQuantity}>-</button>
-                        <div className="counter__number">{props.quantity}</div>
-                        <button className="counter__plus" onClick={props.handleIncreaseQuantity}>+</button>
+
+                <div className="card__footer cart-view">
+                    <div className="card__counter">
+                        <div className="counter__container">
+                            <button className="counter__minus" onClick={props.handleDecreaseQuantity}>-</button>
+                            <div className="counter__number">{props.quantity}</div>
+                            <button className="counter__plus" onClick={props.handleIncreaseQuantity}>+</button>
+                        </div>
                     </div>
+                    <div className="card__prices cart-view">
+                        <div className="card__price">{countPrice(dessertOfTheDayPrice, props.quantity)} ₽</div>
+                        <p className="card__price-formula">{props.quantity} шт. x {props.price} ₽</p>
+                    </div>
+                    
+                    <div className="button card__submit cart-view">В корзину</div>
                 </div>
-                <div className="card__prices cart-view">
-                    <div className="card__price">{countPrice(dessertOfTheDayPrice, props.quantity)} ₽</div>
-                    <p className="card__price-formula">{props.quantity} шт. x {props.price} ₽</p>
-                </div>
-                
-                <div className="button card__submit cart-view">В корзину</div>
             </div>
         </div>
     );
