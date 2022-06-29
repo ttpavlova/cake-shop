@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 45px 30px;
+  padding: 30px;
 }
 .card__img-wrapper {
   display: inline-block;
@@ -76,8 +76,8 @@
 }
 .card__delete-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   width: 20px;
   height: 20px;
   color: #b1b1b1;
@@ -266,6 +266,7 @@
   }
   .card__title {
     margin: 0 0 20px 0;
+    max-width: 240px;
   }
   .card__footer.cart-view {
     display: flex;
@@ -293,13 +294,24 @@
 @media screen and (max-width: 768px) {
   .card__title {
     min-width: 200px;
-    max-width: 400px;
+    max-width: 280px;
   }
 }
 @media screen and (max-width: 576px) {
   .card__img-wrapper.cart-view {
     min-width: 130px;
     width: 80%;
+  }
+  .card__delete-btn {
+    top: 25px;
+    right: 25px;
+  }
+  .card__main.cart-view {
+    padding: 25px;
+  }
+  .card__title {
+    min-width: 100px;
+    max-width: 170px;
   }
   .card__prices {
     flex-direction: column;
@@ -318,6 +330,10 @@
   .card__img-wrapper.cart-view {
     min-width: 150px;
     height: 300px;
+  }
+  .card__delete-btn {
+    top: 20px;
+    right: 20px;
   }
   .card__title {
     min-width: 65px;
