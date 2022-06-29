@@ -15,7 +15,7 @@ function Contacts() {
                         <div className="contacts__phone-part">
                             <div className="contacts__phone">
                                 <p className="item__title">Телефон</p>
-                                <a className="item__property link" href="tel:+70190102341">+7 (019) 010-23-41</a>
+                                <a className="item__property link" href="tel:">+7 (019) 010-23-41</a>
                             </div>
                             <div className="contacts__email">
                                 <p className="item__title">E-Mail</p>

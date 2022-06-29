@@ -131,6 +131,11 @@
     border-radius: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .cart-section {
+    min-height: calc(100vh - 60px - 290px);
+  }
+}
 @media screen and (max-width: 576px) {
   .cart-section__checkout-btn {
     width: 280px;

@@ -1,16 +1,41 @@
 import React from "react";
 import "../css/Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
         <footer className="footer">
             <div className="footer__container">
-                <div className="footer__copyright-part">
-                    <span className="footer__title">© 2022 Cake Shop</span>
-                    <a className="footer__contacts-link" href="mailto:">feedback@cakeshop.com</a>
-                    <span className="footer__favicon-link">
-                        <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/68n8FtrxyoFt/strawberry-cake">Иконка</a> сайта от <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
-                    </span>
+                <div className="footer-menu">
+                    <div className="footer-menu__column">
+                        <ul>
+                            <li className="footer-menu__item">
+                                <p className="footer-menu__text">© 2022 Cake Shop</p>
+                            </li>
+                            <li className="footer-menu__item">
+                                <a className="footer-menu__link" href="mailto:">feedback@cakeshop.com</a>
+                            </li>
+                            <li className="footer-menu__item">
+                                <span className="footer-menu__link icon-credits">
+                                    <a className="icon-credits__link" target="_blank" rel="noreferrer" href="https://icons8.com/icon/68n8FtrxyoFt/strawberry-cake">Иконка</a><span className="icon-credits__text"> сайта от </span><a className="icon-credits__link" target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="footer-menu__column">
+                        <ul>
+                            <li className="footer-menu__item">
+                                <Link className="footer-menu__link" to="/about">О нас</Link>
+                            </li>
+                            <li className="footer-menu__item">
+                                <a className="footer-menu__link" href="/">Вакансии</a>
+                            </li>
+                            <li className="footer-menu__item">
+                                <a className="footer-menu__link" href="/">Обратная связь</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div className="footer__social-links">

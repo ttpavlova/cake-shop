@@ -161,6 +161,12 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .cart-section {
+        min-height: calc(100vh - #{Variables.$header} - #{Variables.$footer_mobile});
+    }
+}
+
 @media screen and (max-width: 576px) {
     .cart-section__checkout-btn {
         width: 280px;

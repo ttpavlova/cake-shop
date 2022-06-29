@@ -115,6 +115,12 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .about {
+        min-height: calc(100vh - #{Variables.$header} - #{Variables.$footer_mobile});
+    }
+}
+
 @media (hover: hover) {
     .about {
         &__link:hover .arrow {

@@ -99,6 +99,11 @@
        object-position: center 55%;
   }
 }
+@media screen and (max-width: 768px) {
+  .about {
+    min-height: calc(100vh - 60px - 290px);
+  }
+}
 @media (hover: hover) {
   .about__link:hover .arrow {
     color: #DC4257;

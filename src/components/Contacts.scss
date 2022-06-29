@@ -127,6 +127,8 @@
 
 @media screen and (max-width: 768px) {
     .contacts {
+        min-height: calc(100vh - #{Variables.$header} - #{Variables.$footer_mobile});
+
         &__phone-part {
             flex-direction: column;
             align-items: flex-start;
