@@ -81,13 +81,18 @@ body {
     font-size: 18px;
     font-weight: 600;
     color: #4d4d4d;
-    user-select: none;
 }
 
 @media screen and (min-width: 620px) {
     body {
       font-size: 1.2rem;
       line-height: 1.4;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .btn {
+        user-select: none;
     }
 }
 
