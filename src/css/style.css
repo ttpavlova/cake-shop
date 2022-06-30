@@ -79,6 +79,10 @@ body {
   font-size: 18px;
   font-weight: 600;
   color: #4d4d4d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media screen and (min-width: 620px) {
