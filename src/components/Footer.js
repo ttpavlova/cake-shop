@@ -29,7 +29,7 @@ function Footer() {
                                 <Link className="footer-menu__link" to="/about">О нас</Link>
                             </li>
                             <li className="footer-menu__item">
-                                <a className="footer-menu__link" href="/about">Вакансии</a>
+                                <Link className="footer-menu__link" to="/contacts">Контакты</Link>
                             </li>
                             <li className="footer-menu__item">
                                 <a className="footer-menu__link" href="/contacts">Обратная связь</a>

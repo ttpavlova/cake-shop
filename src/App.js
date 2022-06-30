@@ -9,6 +9,7 @@ import Cart from './components/Cart';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { CAKES_DATA, PASTRY_DATA, ICECREAM_DATA, DRINKS_DATA, ALL_DATA } from './data';
+import CookieNotice from './components/CookieNotice';
 
 function App() {
   const [isMenuOpened, setMenuOpened] = useState(false);
@@ -168,6 +169,7 @@ function App() {
             />}
           />
         </Routes>
+        <CookieNotice />
         <Footer />
     </BrowserRouter>
   );

@@ -113,12 +113,11 @@
             flex-direction: column;
             justify-content: center;
             max-width: 350px;
-            margin: 0;
+            margin: 0 20px 0 0;
         }
     }
 
     &__title {
-        margin: 0 20px 0 0;
         font-size: 20px;
         font-weight: 600;
     }
@@ -317,9 +316,11 @@
             }
         }
 
-        &__title {
-            margin: 0 0 20px 0;
-            max-width: 240px;
+        &__text {
+            &.cart-view {
+                margin: 0 0 20px 0;
+                max-width: 240px;
+            }
         }
 
         &__footer {
@@ -351,17 +352,21 @@
             }
         }
 
-        &__title {
-            min-width: 400px;
+        &__text {
+            &.cart-view {
+                min-width: 400px;
+            }
         }
     }
 }
 
 @media screen and (max-width: 768px) {
     .card {
-        &__title {
-            min-width: 200px;
-            max-width: 280px;
+        &__text {
+            &.cart-view {
+                min-width: 200px;
+                max-width: 280px;
+            }
         }
     }
 }
@@ -380,13 +385,17 @@
             right: 25px;
         }
 
-        &__main.cart-view {
-            padding: 25px;
+        &__main {
+            &.cart-view {
+                padding: 25px;
+            }
         }
 
-        &__title {
-            min-width: 100px;
-            max-width: 170px;
+        &__text {
+            &.cart-view {
+                min-width: 100px;
+                max-width: 170px;
+            }
         }
 
         &__prices {
@@ -405,8 +414,10 @@
 
 @media screen and (max-width: 390px) {
     .card {
-        &__main.cart-view {
-            padding: 50px 20px 30px;
+        &__main {
+            &.cart-view {
+                padding: 50px 20px 30px;
+            }
         }
 
         &__img-wrapper {
@@ -421,14 +432,18 @@
             right: 20px;
         }
 
-        &__title {
-            min-width: 65px;
-            max-width: 180px;
+        &__text {
+            &.cart-view {
+                min-width: 65px;
+                max-width: 180px;
+            }  
         }
 
-        &__footer.cart-view {
-            align-items: flex-start;
-            flex-direction: column-reverse;
+        &__footer {
+            &.cart-view {
+                align-items: flex-start;
+                flex-direction: column-reverse;
+            }
         }
 
         &.cart-view {
