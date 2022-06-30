@@ -29,10 +29,10 @@ function Footer() {
                                 <Link className="footer-menu__link" to="/about">О нас</Link>
                             </li>
                             <li className="footer-menu__item">
-                                <a className="footer-menu__link" href="/">Вакансии</a>
+                                <a className="footer-menu__link" href="/about">Вакансии</a>
                             </li>
                             <li className="footer-menu__item">
-                                <a className="footer-menu__link" href="/">Обратная связь</a>
+                                <a className="footer-menu__link" href="/contacts">Обратная связь</a>
                             </li>
                         </ul>
                     </div>
