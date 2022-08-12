@@ -15,8 +15,8 @@ You can try the demo at https://cakes-shop.netlify.app/
 
 <table>
   <tr>
-    <td><img src="/showcase/img/promo.png" alt="promo" width="560" height="315"></td>
-    <td><img src="/showcase/img/dessert-of-the-day.png" alt="dessert of the day" width="560" height="315"></td>
+    <td><img src="/showcase/img/promo.png" alt="promo"></td>
+    <td><img src="/showcase/img/dessert-of-the-day.png" alt="dessert of the day"></td>
   </tr>
 </table>
 
