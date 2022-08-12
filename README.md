@@ -13,6 +13,27 @@ You can try the demo at https://cakes-shop.netlify.app/
 
 ## Overview
 
+<table>
+  <tr>
+    <td><img src="/showcase/img/promo.png" alt="promo" width="560" height="315"></td>
+    <td><img src="/showcase/img/dessert-of-the-day.png" alt="dessert of the day" width="560" height="315"></td>
+  </tr>
+</table>
+
+'Dessert of the day' changes every day.
+
+Filter buttons:
+
+![filters.gif](https://github.com/ttpavlova/cake-shop/blob/main/showcase/gif/filters.gif)
+
+Selecting items:
+
+![choosing-items.gif](https://github.com/ttpavlova/cake-shop/blob/main/showcase/gif/choosing-items.gif)
+
+Changing the amount of selected items on the cart page:
+
+![product-cart.gif](https://github.com/ttpavlova/cake-shop/blob/main/showcase/gif/product-cart.gif)
+
 ## Build
 
 First of all, clone this repository:
